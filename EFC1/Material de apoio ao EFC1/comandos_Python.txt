@@ -1,0 +1,12 @@
+import scipy.io
+
+pasta = '/ia353/efc1/'
+
+data = scipy.io.loadmat(pasta + 'data.mat')
+test = scipy.io.loadmat(pasta + 'test.mat')
+
+X = data['X']
+S = data['S']
+
+Xt = test['Xt']
+St = test['St']
