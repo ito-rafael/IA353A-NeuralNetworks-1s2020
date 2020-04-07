@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.1)  6 APR 2020 23:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.1)  7 APR 2020 18:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -401,12 +401,12 @@ LaTeX Info: Redefining \nameref on input line 31.
 
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 31.
-<../figures/unicamp.png, id=40, 481.8pt x 481.8pt>
+<../figures/unicamp.png, id=48, 481.8pt x 481.8pt>
 File: ../figures/unicamp.png Graphic file (type png)
 <use ../figures/unicamp.png>
 Package pdftex.def Info: ../figures/unicamp.png  used on input line 38.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<../figures/feec.jpg, id=42, 863.225pt x 357.335pt>
+<../figures/feec.jpg, id=50, 863.225pt x 357.335pt>
 File: ../figures/feec.jpg Graphic file (type jpg)
 <use ../figures/feec.jpg>
 Package pdftex.def Info: ../figures/feec.jpg  used on input line 45.
@@ -414,179 +414,179 @@ Package pdftex.def Info: ../figures/feec.jpg  used on input line 45.
  [1
 
 {/home/rafael/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../figures/unicamp.png> <../figures/feec.jpg>]
-<../figures/alpha/alpha_MSE_coarse_search.png, id=54, 433.62pt x 289.08pt>
+<../figures/alpha/alpha_MSE_coarse_search.png, id=62, 433.62pt x 289.08pt>
 File: ../figures/alpha/alpha_MSE_coarse_search.png Graphic file (type png)
 <use ../figures/alpha/alpha_MSE_coarse_search.png>
-Package pdftex.def Info: ../figures/alpha/alpha_MSE_coarse_search.png  used on input line 109.
+Package pdftex.def Info: ../figures/alpha/alpha_MSE_coarse_search.png  used on input line 118.
 (pdftex.def)             Requested size: 213.39566pt x 142.26357pt.
-<../figures/alpha/alpha_ACCURACY_coarse_search.png, id=55, 433.62pt x 289.08pt>
+<../figures/alpha/alpha_ACCURACY_coarse_search.png, id=63, 433.62pt x 289.08pt>
 File: ../figures/alpha/alpha_ACCURACY_coarse_search.png Graphic file (type png)
 <use ../figures/alpha/alpha_ACCURACY_coarse_search.png>
-Package pdftex.def Info: ../figures/alpha/alpha_ACCURACY_coarse_search.png  used on input line 117.
+Package pdftex.def Info: ../figures/alpha/alpha_ACCURACY_coarse_search.png  used on input line 126.
 (pdftex.def)             Requested size: 213.39566pt x 142.26357pt.
-<../figures/alpha/alpha_MSE_fine_search.png, id=56, 433.62pt x 289.08pt>
+<../figures/alpha/alpha_MSE_fine_search.png, id=64, 433.62pt x 289.08pt>
 File: ../figures/alpha/alpha_MSE_fine_search.png Graphic file (type png)
 <use ../figures/alpha/alpha_MSE_fine_search.png>
-Package pdftex.def Info: ../figures/alpha/alpha_MSE_fine_search.png  used on input line 139.
+Package pdftex.def Info: ../figures/alpha/alpha_MSE_fine_search.png  used on input line 148.
 (pdftex.def)             Requested size: 213.39566pt x 142.26357pt.
-<../figures/alpha/alpha_ACCURACY_fine_search.png, id=57, 433.62pt x 289.08pt>
+<../figures/alpha/alpha_ACCURACY_fine_search.png, id=65, 433.62pt x 289.08pt>
 File: ../figures/alpha/alpha_ACCURACY_fine_search.png Graphic file (type png)
 <use ../figures/alpha/alpha_ACCURACY_fine_search.png>
-Package pdftex.def Info: ../figures/alpha/alpha_ACCURACY_fine_search.png  used on input line 147.
+Package pdftex.def Info: ../figures/alpha/alpha_ACCURACY_fine_search.png  used on input line 156.
 (pdftex.def)             Requested size: 213.39566pt x 142.26357pt.
  [2 <../figures/alpha/alpha_MSE_coarse_search.png> <../figures/alpha/alpha_ACCURACY_coarse_search.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 158.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 167.
 
-Overfull \hbox (20.52798pt too wide) in paragraph at lines 158--158
+Overfull \hbox (20.52798pt too wide) in paragraph at lines 167--167
 []$\OT1/cmtt/m/n/10 https : / / github . com / ito-[]rafael / machine-[]learning / blob / master / snippets / golden _ section _ search _
  []
 
-<../figures/cm/cm_raw.png, id=78, 585.387pt x 458.4327pt>
+<../figures/cm/cm_raw.png, id=86, 585.387pt x 458.4327pt>
 File: ../figures/cm/cm_raw.png Graphic file (type png)
 <use ../figures/cm/cm_raw.png>
-Package pdftex.def Info: ../figures/cm/cm_raw.png  used on input line 191.
+Package pdftex.def Info: ../figures/cm/cm_raw.png  used on input line 200.
 (pdftex.def)             Requested size: 213.39566pt x 167.11319pt.
-<../figures/cm/cm_norm.png, id=79, 574.5465pt x 456.9873pt>
+<../figures/cm/cm_norm.png, id=87, 574.5465pt x 456.9873pt>
 File: ../figures/cm/cm_norm.png Graphic file (type png)
 <use ../figures/cm/cm_norm.png>
-Package pdftex.def Info: ../figures/cm/cm_norm.png  used on input line 199.
+Package pdftex.def Info: ../figures/cm/cm_norm.png  used on input line 208.
 (pdftex.def)             Requested size: 213.39566pt x 169.73114pt.
 [3 <../figures/alpha/alpha_MSE_fine_search.png> <../figures/alpha/alpha_ACCURACY_fine_search.png>]
-<../figures/heatmap/digit_1.png, id=91, 289.08pt x 289.08pt>
+<../figures/heatmap/digit_1.png, id=99, 289.08pt x 289.08pt>
 File: ../figures/heatmap/digit_1.png Graphic file (type png)
 <use ../figures/heatmap/digit_1.png>
-Package pdftex.def Info: ../figures/heatmap/digit_1.png  used on input line 218.
+Package pdftex.def Info: ../figures/heatmap/digit_1.png  used on input line 227.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-<../figures/heatmap/digit_2.png, id=92, 289.08pt x 289.08pt>
+<../figures/heatmap/digit_2.png, id=100, 289.08pt x 289.08pt>
 File: ../figures/heatmap/digit_2.png Graphic file (type png)
 <use ../figures/heatmap/digit_2.png>
-Package pdftex.def Info: ../figures/heatmap/digit_2.png  used on input line 226.
+Package pdftex.def Info: ../figures/heatmap/digit_2.png  used on input line 235.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-<../figures/heatmap/digit_3.png, id=93, 289.08pt x 289.08pt>
+<../figures/heatmap/digit_3.png, id=101, 289.08pt x 289.08pt>
 File: ../figures/heatmap/digit_3.png Graphic file (type png)
 <use ../figures/heatmap/digit_3.png>
-Package pdftex.def Info: ../figures/heatmap/digit_3.png  used on input line 234.
+Package pdftex.def Info: ../figures/heatmap/digit_3.png  used on input line 243.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-<../figures/heatmap/digit_4.png, id=94, 289.08pt x 289.08pt>
+<../figures/heatmap/digit_4.png, id=102, 289.08pt x 289.08pt>
 File: ../figures/heatmap/digit_4.png Graphic file (type png)
 <use ../figures/heatmap/digit_4.png>
-Package pdftex.def Info: ../figures/heatmap/digit_4.png  used on input line 242.
+Package pdftex.def Info: ../figures/heatmap/digit_4.png  used on input line 251.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-<../figures/heatmap/digit_5.png, id=95, 289.08pt x 289.08pt>
+<../figures/heatmap/digit_5.png, id=103, 289.08pt x 289.08pt>
 File: ../figures/heatmap/digit_5.png Graphic file (type png)
 <use ../figures/heatmap/digit_5.png>
-Package pdftex.def Info: ../figures/heatmap/digit_5.png  used on input line 250.
+Package pdftex.def Info: ../figures/heatmap/digit_5.png  used on input line 259.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-<../figures/heatmap/digit_6.png, id=96, 289.08pt x 289.08pt>
+<../figures/heatmap/digit_6.png, id=104, 289.08pt x 289.08pt>
 File: ../figures/heatmap/digit_6.png Graphic file (type png)
 <use ../figures/heatmap/digit_6.png>
-Package pdftex.def Info: ../figures/heatmap/digit_6.png  used on input line 258.
+Package pdftex.def Info: ../figures/heatmap/digit_6.png  used on input line 267.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-<../figures/heatmap/digit_7.png, id=97, 289.08pt x 289.08pt>
+<../figures/heatmap/digit_7.png, id=105, 289.08pt x 289.08pt>
 File: ../figures/heatmap/digit_7.png Graphic file (type png)
 <use ../figures/heatmap/digit_7.png>
-Package pdftex.def Info: ../figures/heatmap/digit_7.png  used on input line 266.
+Package pdftex.def Info: ../figures/heatmap/digit_7.png  used on input line 275.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-<../figures/heatmap/digit_8.png, id=98, 289.08pt x 289.08pt>
+<../figures/heatmap/digit_8.png, id=106, 289.08pt x 289.08pt>
 File: ../figures/heatmap/digit_8.png Graphic file (type png)
 <use ../figures/heatmap/digit_8.png>
-Package pdftex.def Info: ../figures/heatmap/digit_8.png  used on input line 274.
+Package pdftex.def Info: ../figures/heatmap/digit_8.png  used on input line 283.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-<../figures/heatmap/digit_9.png, id=99, 289.08pt x 289.08pt>
+<../figures/heatmap/digit_9.png, id=107, 289.08pt x 289.08pt>
 File: ../figures/heatmap/digit_9.png Graphic file (type png)
 <use ../figures/heatmap/digit_9.png>
-Package pdftex.def Info: ../figures/heatmap/digit_9.png  used on input line 282.
+Package pdftex.def Info: ../figures/heatmap/digit_9.png  used on input line 291.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-<../figures/heatmap/digit_0.png, id=100, 289.08pt x 289.08pt>
+<../figures/heatmap/digit_0.png, id=108, 289.08pt x 289.08pt>
 File: ../figures/heatmap/digit_0.png Graphic file (type png)
 <use ../figures/heatmap/digit_0.png>
-Package pdftex.def Info: ../figures/heatmap/digit_0.png  used on input line 290.
+Package pdftex.def Info: ../figures/heatmap/digit_0.png  used on input line 299.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-<../figures/misclassified/8.png, id=101, 433.62pt x 289.08pt>
+<../figures/misclassified/8.png, id=109, 433.62pt x 289.08pt>
 File: ../figures/misclassified/8.png Graphic file (type png)
 <use ../figures/misclassified/8.png>
-Package pdftex.def Info: ../figures/misclassified/8.png  used on input line 315.
+Package pdftex.def Info: ../figures/misclassified/8.png  used on input line 324.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/9.png, id=102, 433.62pt x 289.08pt>
+<../figures/misclassified/9.png, id=110, 433.62pt x 289.08pt>
 File: ../figures/misclassified/9.png Graphic file (type png)
 <use ../figures/misclassified/9.png>
-Package pdftex.def Info: ../figures/misclassified/9.png  used on input line 325.
+Package pdftex.def Info: ../figures/misclassified/9.png  used on input line 334.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/10.png, id=103, 433.62pt x 289.08pt>
+<../figures/misclassified/10.png, id=111, 433.62pt x 289.08pt>
 File: ../figures/misclassified/10.png Graphic file (type png)
 <use ../figures/misclassified/10.png>
-Package pdftex.def Info: ../figures/misclassified/10.png  used on input line 335.
+Package pdftex.def Info: ../figures/misclassified/10.png  used on input line 344.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/12.png, id=104, 433.62pt x 289.08pt>
+<../figures/misclassified/12.png, id=112, 433.62pt x 289.08pt>
 File: ../figures/misclassified/12.png Graphic file (type png)
 <use ../figures/misclassified/12.png>
-Package pdftex.def Info: ../figures/misclassified/12.png  used on input line 345.
+Package pdftex.def Info: ../figures/misclassified/12.png  used on input line 354.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/14.png, id=105, 433.62pt x 289.08pt>
+<../figures/misclassified/14.png, id=113, 433.62pt x 289.08pt>
 File: ../figures/misclassified/14.png Graphic file (type png)
 <use ../figures/misclassified/14.png>
-Package pdftex.def Info: ../figures/misclassified/14.png  used on input line 355.
+Package pdftex.def Info: ../figures/misclassified/14.png  used on input line 364.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/17.png, id=106, 433.62pt x 289.08pt>
+<../figures/misclassified/17.png, id=114, 433.62pt x 289.08pt>
 File: ../figures/misclassified/17.png Graphic file (type png)
 <use ../figures/misclassified/17.png>
-Package pdftex.def Info: ../figures/misclassified/17.png  used on input line 365.
+Package pdftex.def Info: ../figures/misclassified/17.png  used on input line 374.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/19.png, id=107, 433.62pt x 289.08pt>
+<../figures/misclassified/19.png, id=115, 433.62pt x 289.08pt>
 File: ../figures/misclassified/19.png Graphic file (type png)
 <use ../figures/misclassified/19.png>
-Package pdftex.def Info: ../figures/misclassified/19.png  used on input line 375.
+Package pdftex.def Info: ../figures/misclassified/19.png  used on input line 384.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/21.png, id=108, 433.62pt x 289.08pt>
+<../figures/misclassified/21.png, id=116, 433.62pt x 289.08pt>
 File: ../figures/misclassified/21.png Graphic file (type png)
 <use ../figures/misclassified/21.png>
-Package pdftex.def Info: ../figures/misclassified/21.png  used on input line 385.
+Package pdftex.def Info: ../figures/misclassified/21.png  used on input line 394.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/24.png, id=109, 433.62pt x 289.08pt>
+<../figures/misclassified/24.png, id=117, 433.62pt x 289.08pt>
 File: ../figures/misclassified/24.png Graphic file (type png)
 <use ../figures/misclassified/24.png>
-Package pdftex.def Info: ../figures/misclassified/24.png  used on input line 395.
+Package pdftex.def Info: ../figures/misclassified/24.png  used on input line 404.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/26.png, id=110, 433.62pt x 289.08pt>
+<../figures/misclassified/26.png, id=118, 433.62pt x 289.08pt>
 File: ../figures/misclassified/26.png Graphic file (type png)
 <use ../figures/misclassified/26.png>
-Package pdftex.def Info: ../figures/misclassified/26.png  used on input line 405.
+Package pdftex.def Info: ../figures/misclassified/26.png  used on input line 414.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/15.png, id=111, 433.62pt x 289.08pt>
+<../figures/misclassified/15.png, id=119, 433.62pt x 289.08pt>
 File: ../figures/misclassified/15.png Graphic file (type png)
 <use ../figures/misclassified/15.png>
-Package pdftex.def Info: ../figures/misclassified/15.png  used on input line 415.
+Package pdftex.def Info: ../figures/misclassified/15.png  used on input line 424.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
-<../figures/misclassified/20.png, id=112, 433.62pt x 289.08pt>
+<../figures/misclassified/20.png, id=120, 433.62pt x 289.08pt>
 File: ../figures/misclassified/20.png Graphic file (type png)
 <use ../figures/misclassified/20.png>
-Package pdftex.def Info: ../figures/misclassified/20.png  used on input line 425.
+Package pdftex.def Info: ../figures/misclassified/20.png  used on input line 434.
 (pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
  [4 <../figures/cm/cm_raw.png> <../figures/cm/cm_norm.png> <../figures/heatmap/digit_1.png> <../figures/heatmap/digit_2.png> <../figures/heatmap/digit_3.png> <../figures/heatmap/digit_4.png> <../figures/heatmap/digit_5.png> <../figures/heatmap/digit_6.png> <../figures/heatmap/digit_7.png> <../figures/heatmap/digit_8.png> <../figures/heatmap/digit_9.png> <../figures/heatmap/digit_0.png>] [5 <../figures/misclassified/8.png> <../figures/misclassified/9.png> <../figures/misclassified/10.png> <../figures/misclassified/12.png> <../figures/misclassified/14.png> <../figures/misclassified/17.png> <../figures/misclassified/19.png> <../figures/misclassified/21.png> <../figures/misclassified/24.png> <../figures/misclassified/26.png> <../figures/misclassified/15.png> <../figures/misclassified/20.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 475.
  [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 475.
  (./efc1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 449.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 475.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 475.
 Package rerunfilecheck Info: File `efc1.out' has not changed.
-(rerunfilecheck)             Checksum: 6EB614C3B83B659081F4C4763CA1D547;527.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
+(rerunfilecheck)             Checksum: D7CB2102DBAE5BA4F4440B7419D349F5;643.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 475.
  ) 
 Here is how much of TeX's memory you used:
- 8817 strings out of 492167
- 131707 string characters out of 6131559
- 256397 words of memory out of 5000000
- 13048 multiletter control sequences out of 15000+600000
+ 8831 strings out of 492167
+ 131848 string characters out of 6131559
+ 255715 words of memory out of 5000000
+ 13060 multiletter control sequences out of 15000+600000
  11939 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,13n,46p,518b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,13n,46p,2708b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on efc1.pdf (6 pages, 1586547 bytes).
+Output written on efc1.pdf (6 pages, 1595246 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 239 words of extra memory for PDF output out of 10000 (max. 10000000)
 

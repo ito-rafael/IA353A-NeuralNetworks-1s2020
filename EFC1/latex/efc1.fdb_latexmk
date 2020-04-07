@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1586227291 "efc1.tex" "efc1.pdf" "efc1" 1586227298
+["pdflatex"] 1586295086 "efc1.tex" "efc1.pdf" "efc1" 1586295090
   "../figures/alpha/alpha_ACCURACY_coarse_search.png" 1586124140 99123 3695a3f0b9ce1a6087be4fea212dc294 ""
   "../figures/alpha/alpha_ACCURACY_fine_search.png" 1586124268 99964 835fe0d037c618591927315225631905 ""
   "../figures/alpha/alpha_MSE_coarse_search.png" 1586124139 111159 bcc0558b20722f0f3d1cc37eaebf6ee5 ""
@@ -118,11 +118,11 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1572595918 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1585753501 8044938 b99b700dbafbf77de94f29b04c614412 ""
-  "efc1.aux" 1586227298 11895 d6df95c06df49c84d2bc71fd4f4e7688 "pdflatex"
-  "efc1.out" 1586227298 527 6eb614c3b83b659081f4c4763ca1d547 "pdflatex"
-  "efc1.tex" 1586227288 14250 982688539b0822929f189560177b7053 ""
+  "efc1.aux" 1586295090 14671 8d794ecc0035cb79ac28043fa6dbed6b "pdflatex"
+  "efc1.out" 1586295090 643 d7cb2102dbae5ba4f4440b7419d349f5 "pdflatex"
+  "efc1.tex" 1586295079 17269 65837ad7d8b9650bd8b5266f567ed1bd ""
   (generated)
+  "efc1.aux"
+  "efc1.log"
   "efc1.pdf"
   "efc1.out"
-  "efc1.log"
-  "efc1.aux"
