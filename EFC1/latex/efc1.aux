@@ -1,0 +1,107 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\bbl@beforestart
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\babel@aux{english}{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Source files}{2}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The Jupyter notebook with the code used to generate the plots and results presented in this report, all figures showed here and even the \LaTeX  source code used to generate this PDF can be found at the following GitHub repository:}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Regularization coefficient (Ridge Regression)}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Results summary}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Values of regularization coefficient found in coarse and fine searches\relax }}{2}{table.caption.3}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:alpha_results}{{1}{2}{Values of regularization coefficient found in coarse and fine searches\relax }{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Coarse search}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{While performing the coarse search for the best regularization coefficient, 3 more values of lambda were added. This was done in order to see the falling of the accuracy curve, since the last suggested value, $2^{10}$, had the best accuracy. The final values of lambda tested were:}{2}{section*.4}\protected@file@percent }
+\newlabel{fig:alpha-coarse-mse}{{2a}{2}{MSE progression\relax }{figure.caption.5}{}}
+\newlabel{sub@fig:alpha-coarse-mse}{{a}{2}{MSE progression\relax }{figure.caption.5}{}}
+\newlabel{fig:alpha-coarse-acc}{{2b}{2}{Accuracy progression\relax }{figure.caption.5}{}}
+\newlabel{sub@fig:alpha-coarse-acc}{{b}{2}{Accuracy progression\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Progression of MSE and accuracy in validation set for different values of the regularization coefficient (coarse search)\relax }}{2}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:alpha_coarse}{{2}{2}{Progression of MSE and accuracy in validation set for different values of the regularization coefficient (coarse search)\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Fine search}{3}{subsection.2.3}\protected@file@percent }
+\newlabel{fig:alpha-fine-mse}{{3a}{3}{MSE progression)\relax }{figure.caption.7}{}}
+\newlabel{sub@fig:alpha-fine-mse}{{a}{3}{MSE progression)\relax }{figure.caption.7}{}}
+\newlabel{fig:alpha-fine-acc}{{3b}{3}{Accuracy progression)\relax }{figure.caption.7}{}}
+\newlabel{sub@fig:alpha-fine-acc}{{b}{3}{Accuracy progression)\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Progression of MSE and accuracy in validation set for different values of the regularization coefficient (fine search)\relax }}{3}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:alpha_fine}{{3}{3}{Progression of MSE and accuracy in validation set for different values of the regularization coefficient (fine search)\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{In order to perform the fine search of the regularization coefficient, a golden-section one dimensional search algorithm was coded. Among the function parameters, the most important ones are the intervals of the search, precision desired and the loss function. The code can be found in:\\ \url  {https://github.com/ito-rafael/machine-learning/blob/master/snippets/golden_section_search_valid.py}}{3}{figure.caption.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Confusion Matrix}{3}{section.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Number of samples for each class in the test set\relax }}{3}{table.caption.9}\protected@file@percent }
+\newlabel{tab:samples_test_set}{{2}{3}{Number of samples for each class in the test set\relax }{table.caption.9}{}}
+\newlabel{fig:cm_raw}{{4a}{4}{Confusion matrix with raw values\relax }{figure.caption.10}{}}
+\newlabel{sub@fig:cm_raw}{{a}{4}{Confusion matrix with raw values\relax }{figure.caption.10}{}}
+\newlabel{fig:cm_norm}{{4b}{4}{Confusion matrix with normalized values\relax }{figure.caption.10}{}}
+\newlabel{sub@fig:cm_norm}{{b}{4}{Confusion matrix with normalized values\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Confusion matrix with normalized and raw values\relax }}{4}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:cm}{{4}{4}{Confusion matrix with normalized and raw values\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {paragraph}{The values displayed in the confusion matrix were obtained with the linear classifier applied in the test set. The test set is somewhat balanced, containing the number of samples for each class as illustrated in Figure \ref  {tab:samples_test_set}}{4}{figure.caption.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Classifier Heatmap}{4}{section.4}\protected@file@percent }
+\newlabel{fig:digit_1}{{5a}{4}{Digit 1 heatmap\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:digit_1}{{a}{4}{Digit 1 heatmap\relax }{figure.caption.11}{}}
+\newlabel{fig:digit_2}{{5b}{4}{Digit 2 heatmap\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:digit_2}{{b}{4}{Digit 2 heatmap\relax }{figure.caption.11}{}}
+\newlabel{fig:digit_3}{{5c}{4}{Digit 3 heatmap\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:digit_3}{{c}{4}{Digit 3 heatmap\relax }{figure.caption.11}{}}
+\newlabel{fig:digit_4}{{5d}{4}{Digit 4 heatmap\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:digit_4}{{d}{4}{Digit 4 heatmap\relax }{figure.caption.11}{}}
+\newlabel{fig:digit_5}{{5e}{4}{Digit 5 heatmap\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:digit_5}{{e}{4}{Digit 5 heatmap\relax }{figure.caption.11}{}}
+\newlabel{fig:digit_6}{{5f}{4}{Digit 6 heatmap\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:digit_6}{{f}{4}{Digit 6 heatmap\relax }{figure.caption.11}{}}
+\newlabel{fig:digit_7}{{5g}{4}{Digit 7 heatmap\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:digit_7}{{g}{4}{Digit 7 heatmap\relax }{figure.caption.11}{}}
+\newlabel{fig:digit_8}{{5h}{4}{Digit 8 heatmap\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:digit_8}{{h}{4}{Digit 8 heatmap\relax }{figure.caption.11}{}}
+\newlabel{fig:digit_9}{{5i}{4}{Digit 9 heatmap\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:digit_9}{{i}{4}{Digit 9 heatmap\relax }{figure.caption.11}{}}
+\newlabel{fig:digit_0}{{5j}{4}{Digit 0 heatmap\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:digit_0}{{j}{4}{Digit 0 heatmap\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Heatmap for the classifiers correspondent to each digit\relax }}{4}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:heatmap_digits}{{5}{4}{Heatmap for the classifiers correspondent to each digit\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Misclassified data}{5}{section.5}\protected@file@percent }
+\newlabel{fig:example_1}{{6a}{5}{Real class: 3 (0.12)\\ Predicted class: 7 (0.86)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_1}{{a}{5}{Real class: 3 (0.12)\\ Predicted class: 7 (0.86)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_2}{{6b}{5}{Real class: 5 (-0.16)\\ Predicted class: 6 (0.57)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_2}{{b}{5}{Real class: 5 (-0.16)\\ Predicted class: 6 (0.57)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_3}{{6c}{5}{Real class: 8 (-0.00)\\ Predicted class: 2 (0.72)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_3}{{c}{5}{Real class: 8 (-0.00)\\ Predicted class: 2 (0.72)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_4}{{6d}{5}{Real class: 6 (0.06)\\ Predicted class: 0 (0.76)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_4}{{d}{5}{Real class: 6 (0.06)\\ Predicted class: 0 (0.76)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_5}{{6e}{5}{Real class: 5 (-0.10)\\ Predicted class: 6 (0.58)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_5}{{e}{5}{Real class: 5 (-0.10)\\ Predicted class: 6 (0.58)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_6}{{6f}{5}{Real class: 5 (0.04)\\ Predicted class: 0 (0.71)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_6}{{f}{5}{Real class: 5 (0.04)\\ Predicted class: 0 (0.71)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_7}{{6g}{5}{Real class: 8 (0.16)\\ Predicted class: 4 (0.79)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_7}{{g}{5}{Real class: 8 (0.16)\\ Predicted class: 4 (0.79)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_8}{{6h}{5}{Real class: 7 (-0.01)\\ Predicted class: 2 (0.63)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_8}{{h}{5}{Real class: 7 (-0.01)\\ Predicted class: 2 (0.63)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_9}{{6i}{5}{Real class: 8 (0.12)\\ Predicted class: 1 (0.75)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_9}{{i}{5}{Real class: 8 (0.12)\\ Predicted class: 1 (0.75)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_10}{{6j}{5}{Real class: 1 (0.04)\\ Predicted class: 7 (0.64)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_10}{{j}{5}{Real class: 1 (0.04)\\ Predicted class: 7 (0.64)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_11}{{6k}{5}{Real class: 8 (-0.15)\\ Predicted class: 3 (0.53)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_11}{{k}{5}{Real class: 8 (-0.15)\\ Predicted class: 3 (0.53)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_12}{{6l}{5}{Real class: 5 (-0.05)\\ Predicted class: 6 (0.58)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_12}{{l}{5}{Real class: 5 (-0.05)\\ Predicted class: 6 (0.58)\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Misclassified digits\relax }}{5}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:misclassified_digits}{{6}{5}{Misclassified digits\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {paragraph}{The digits shown in Figure \ref  {fig:misclassified_digits} are in the top 30 misclassified digits from which the difference between the output for the real class and the output for the predicted class are the highest. Both real and predicted class and its outputs values associated are indicated. The output is shown in parenthesis, in front of the correspondent class.}{5}{figure.caption.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Theoretical question}{6}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Question:}\\ The choice of a different regularization coefficient for each class (instead of a single value for all classes) can give a higher performance?}{6}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Answer:}\\ ...to\_be\_answered...}{6}{section*.15}\protected@file@percent }
