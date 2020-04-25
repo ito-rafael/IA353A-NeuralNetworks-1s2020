@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Source files}{}% 1
+\BOOKMARK [1][-]{section.2}{Extreme Learning Machine}{}% 2
+\BOOKMARK [2][-]{subsection.2.0}{Regularization coefficient \(Ridge Regression\)}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.0.1}{Coarse search}{subsection.2.0}% 4
+\BOOKMARK [3][-]{subsubsection.2.0.2}{Fine search}{subsection.2.0}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Confusion Matrix and Misclassification}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Confusion Matrix}{subsection.2.1}% 7
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Misclassified data}{subsection.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.2}{Performance and computational resources improvements}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Regularization coefficients comparison}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.4}{Results for a different initialization}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.5}{Modifications aiming better results}{section.2}% 12

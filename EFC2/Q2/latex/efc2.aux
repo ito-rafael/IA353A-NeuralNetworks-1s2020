@@ -1,0 +1,87 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\bbl@beforestart
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\babel@aux{english}{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Source files}{2}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The Jupyter notebook with the code used to generate the plots and results presented in this report, all figures showed here and even the \LaTeX  source code used to generate this PDF can be found at the following GitHub repository:}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Extreme Learning Machine}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.0}Regularization coefficient (Ridge Regression)}{2}{subsection.2.0}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Values of regularization coefficient found in coarse and fine searches\relax }}{2}{table.caption.3}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:alpha_results}{{1}{2}{Values of regularization coefficient found in coarse and fine searches\relax }{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.0.1}Coarse search}{2}{subsubsection.2.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{While performing the coarse search for the best regularization coefficient, 3 more values of lambda were added. This was done in order to see the falling of the accuracy curve, even though the best accuracy was in $2^{8}$. The final values of lambda tested were:}{2}{section*.4}\protected@file@percent }
+\newlabel{fig:alpha-coarse-mse}{{2a}{2}{MSE progression\relax }{figure.caption.5}{}}
+\newlabel{sub@fig:alpha-coarse-mse}{{a}{2}{MSE progression\relax }{figure.caption.5}{}}
+\newlabel{fig:alpha-coarse-acc}{{2b}{2}{Accuracy progression\relax }{figure.caption.5}{}}
+\newlabel{sub@fig:alpha-coarse-acc}{{b}{2}{Accuracy progression\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Progression of MSE and accuracy in validation set for different values of the regularization coefficient (coarse search)\relax }}{2}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:alpha_coarse}{{2}{2}{Progression of MSE and accuracy in validation set for different values of the regularization coefficient (coarse search)\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.0.2}Fine search}{3}{subsubsection.2.0.2}\protected@file@percent }
+\newlabel{fig:alpha-fine-mse}{{3a}{3}{MSE progression)\relax }{figure.caption.7}{}}
+\newlabel{sub@fig:alpha-fine-mse}{{a}{3}{MSE progression)\relax }{figure.caption.7}{}}
+\newlabel{fig:alpha-fine-acc}{{3b}{3}{Accuracy progression)\relax }{figure.caption.7}{}}
+\newlabel{sub@fig:alpha-fine-acc}{{b}{3}{Accuracy progression)\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Progression of MSE and accuracy in validation set for different values of the regularization coefficient (fine search)\relax }}{3}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:alpha_fine}{{3}{3}{Progression of MSE and accuracy in validation set for different values of the regularization coefficient (fine search)\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{In order to perform the fine search of the regularization coefficient, a golden-section one dimensional search algorithm was coded. Among the function parameters, the most important ones are the intervals of the search, precision desired and the loss function. The code can be found in:\\ \url  {https://github.com/ito-rafael/machine-learning/blob/master/snippets/golden_section_search_valid.py}}{3}{figure.caption.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Confusion Matrix and Misclassification}{3}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Considering the training set, plot the confusion matrix and a few examples of misclassified digits from at least three different classes.}{3}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Confusion Matrix}{3}{subsubsection.2.1.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Number of samples for each class in the training set\relax }}{3}{table.caption.10}\protected@file@percent }
+\newlabel{tab:samples_training_set}{{2}{3}{Number of samples for each class in the training set\relax }{table.caption.10}{}}
+\newlabel{fig:cm_raw}{{4a}{4}{Confusion matrix with raw values\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:cm_raw}{{a}{4}{Confusion matrix with raw values\relax }{figure.caption.11}{}}
+\newlabel{fig:cm_norm}{{4b}{4}{Confusion matrix with normalized values\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:cm_norm}{{b}{4}{Confusion matrix with normalized values\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Confusion matrix with normalized and raw values\relax }}{4}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:cm}{{4}{4}{Confusion matrix with normalized and raw values\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {paragraph}{The values displayed in the confusion matrix were obtained with the extreme learning machine applied to the training set (training plus validation). The training set is somewhat balanced, containing the number of samples for each class as illustrated in Figure \ref  {tab:samples_training_set}}{4}{figure.caption.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Misclassified data}{5}{subsubsection.2.1.2}\protected@file@percent }
+\newlabel{fig:example_1}{{5a}{5}{Real class: 3 (0.02)\\ Predicted class: 7 (1.25)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_1}{{a}{5}{Real class: 3 (0.02)\\ Predicted class: 7 (1.25)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_2}{{5b}{5}{Real class: 7 (0.10)\\ Predicted class: 0 (1.06)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_2}{{b}{5}{Real class: 7 (0.10)\\ Predicted class: 0 (1.06)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_3}{{5c}{5}{Real class: 4 (0.02)\\ Predicted class: 7 (0.90)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_3}{{c}{5}{Real class: 4 (0.02)\\ Predicted class: 7 (0.90)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_4}{{5d}{5}{Real class: 9 (-0.12)\\ Predicted class: 7 (0.73)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_4}{{d}{5}{Real class: 9 (-0.12)\\ Predicted class: 7 (0.73)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_5}{{5e}{5}{Real class: 5 (-0.07)\\ Predicted class: 6 (0.78)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_5}{{e}{5}{Real class: 5 (-0.07)\\ Predicted class: 6 (0.78)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_6}{{5f}{5}{Real class: 4 (0.14)\\ Predicted class: 0 (0.97)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_6}{{f}{5}{Real class: 4 (0.14)\\ Predicted class: 0 (0.97)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_7}{{5g}{5}{Real class: 9 (-0.04)\\ Predicted class: 0 (0.77)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_7}{{g}{5}{Real class: 9 (-0.04)\\ Predicted class: 0 (0.77)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_8}{{5h}{5}{Real class: 1 (-0.14)\\ Predicted class: 7 (0.66)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_8}{{h}{5}{Real class: 1 (-0.14)\\ Predicted class: 7 (0.66)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_9}{{5i}{5}{Real class: 3 (-0.14)\\ Predicted class: 8 (0.66)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_9}{{i}{5}{Real class: 3 (-0.14)\\ Predicted class: 8 (0.66)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_10}{{5j}{5}{Real class: 8 (-0.03)\\ Predicted class: 4 (0.74)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_10}{{j}{5}{Real class: 8 (-0.03)\\ Predicted class: 4 (0.74)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_11}{{5k}{5}{Real class: 5 (-0.11)\\ Predicted class: 6 (0.65)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_11}{{k}{5}{Real class: 5 (-0.11)\\ Predicted class: 6 (0.65)\relax }{figure.caption.13}{}}
+\newlabel{fig:example_12}{{5l}{5}{Real class: 6 (0.09)\\ Predicted class: 4 (0.82)\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:example_12}{{l}{5}{Real class: 6 (0.09)\\ Predicted class: 4 (0.82)\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Misclassified digits\relax }}{5}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:misclassified_digits}{{5}{5}{Misclassified digits\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {paragraph}{The digits shown in Figure \ref  {fig:misclassified_digits} are in the top 30 misclassified digits from which the difference between the output for the real class and the output for the predicted class are the highest. Both real and predicted class and its outputs values associated are indicated. The output is shown in parenthesis, in front of the correspondent class.}{5}{figure.caption.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Performance and computational resources improvements}{6}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Regularization coefficients comparison}{6}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Results for a different initialization}{6}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Modifications aiming better results}{6}{subsection.2.5}\protected@file@percent }
