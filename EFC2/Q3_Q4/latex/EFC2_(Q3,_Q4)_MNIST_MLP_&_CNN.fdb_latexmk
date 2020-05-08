@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1588460298 "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.tex" "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.pdf" "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN" 1588460299
+["pdflatex"] 1588904856 "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.tex" "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.pdf" "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN" 1588904857
   "/home/rafael/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1576676982 334320 d10c2901904b0a572e57c10ac4826b67 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1572595918 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1572595918 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -195,14 +195,14 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1572595918 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1572595918 4962 9c1069474ff71dbc47d5006555e352d3 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1585753501 8044938 b99b700dbafbf77de94f29b04c614412 ""
-  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.aux" 1588460299 2997 c541262a8e0f9c623946685f6af0ff67 "pdflatex"
-  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.out" 1588460299 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.tex" 1588460237 91923 890aea63527143dc08a21c9b5276cb7a ""
-  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN_files/EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN_27_0.png" 1588459523 22589 8d655022c3420048a962511be44b75ea ""
-  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN_files/EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN_50_0.png" 1588459523 22595 3a426032c53d9ecb9d84608ce2f0537f ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1588776570 8044938 d53b80516de230b84454862c99416847 ""
+  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.aux" 1588904857 3148 af2dcd89c59cb3240cb001e49af018e3 "pdflatex"
+  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.out" 1588904856 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.tex" 1588904855 97401 efae870f91149358a74e9bd0fb0c5eaa ""
+  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN_files/EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN_27_0.png" 1588904601 25937 caeda9275e362d0940cb2ae7054ff06b ""
+  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN_files/EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN_50_0.png" 1588904601 25864 eeb5956d68d81efcb1076595c86fd325 ""
   (generated)
-  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.aux"
-  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.log"
-  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.pdf"
   "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.out"
+  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.pdf"
+  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.log"
+  "EFC2_(Q3,_Q4)_MNIST_MLP_&_CNN.aux"
