@@ -7,6 +7,6 @@
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Confusion Matrix}{subsection.2.1}% 7
 \BOOKMARK [3][-]{subsubsection.2.1.2}{Misclassified data}{subsection.2.1}% 8
 \BOOKMARK [2][-]{subsection.2.2}{Performance and computational resources improvements}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.3}{Regularization coefficients comparison}{section.2}% 10
-\BOOKMARK [2][-]{subsection.2.4}{Results for a different initialization}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.3}{Regularization coefficients comparison \(Linear and ELM\)}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.4}{Regularization coefficient for a different initialization}{section.2}% 11
 \BOOKMARK [2][-]{subsection.2.5}{Modifications aiming better results}{section.2}% 12

@@ -361,17 +361,110 @@
 \subsection{Performance and computational resources improvements}
 %=================================================
 
-%=================================================
-\subsection{Regularization coefficients comparison}
-%=================================================
+\textbf{Question:} \newline
+Seguindo a sugestão de empregar 500 unidades na camada intermediária da rede neural, apresente argumentos para sustentar o ganho de desempenho verificado e uma execução em menor tempo computacional, quando comparado com o classificador linear da Q1.
+\vspace{5mm}
+%-------------------------------------------------
+\textbf{\\Answer:}
+\begin{itemize}
+    \item \underline{Performance improvement:}\vspace{5pt}\\
+        We can see better results using the ELM comparing to the linear model of Q1 because now we use a non-linearity activate function at the hidden layer (here we used the rectifier activation function, i.e., the units of the hidden layer are ReLUs). The universal approximation theorem states that a feed-forward network with a single hidden layer with a finite number of neurons with non-linear activation function is capable of approximate any continuous function. Even though we are not training a neural network, but using ``ready-to-use" hidden layer weights instead, the intuition behind the non-linear layer followed by a linear layer is the same. We can also see this performance improvement at the perspective that instead of finding a classifier directly from the values of the pixels in the image, now we have a new problem to solve. Now we have to find a classifier using the outputs of the neurons in the hidden layer, which is an easier problem than the previous one.
+
+    \item \underline{Computational resources improvement:}\vspace{5pt}\\
+    The reason that the code from Q2 runs faster than the code from Q1 is that the operation with the highest computational cost is by far calculating the inverse matrix of $(X^T X + \lambda I')$ when computing the weights, as can be seen in the following equation:
+    \[{\textbf{W} = (X^T X + \lambda I')^{-1} X^T \textbf{y}}\]
+    In Q1 we need to invert the matrix $(X^T X + \lambda I')$ of size 785 x 785, while in Q2 we have to invert the matrix $(H^T H + \lambda I')$ of size 501 x 501. This difference of shapes considering the matrix inversion is decisive to lower the computational time, even though in Q2 there is an extra product $H = X W'$ happening before the calculus of the \textbf{W} matrix, where $W'$ is the matrix with the weights of the hidden layers chosen randomly.\\
+    When using the rectifier activation function (commonly called ReLU, although ReLU is the unit - neuron), some of the outputs of the hidden layer will be zero. This might make the product of $H^T H$ a bit easier since a portion of elements will be zero, but the dominant term where most of the complexity resides is definetely at the computation of the inverse matrix.
+\end{itemize}
+
+\newpage
 
 %=================================================
-\subsection{Results for a different initialization}
+\subsection{Regularization coefficients comparison (Linear and ELM)}
 %=================================================
+
+\textbf{Question:} \newline
+Compare os coeficientes de regularização obtidos nessas duas primeiras atividades (classificador linear da Q1 e ELM da Q2), os apresentando numa única tabela para fácil visualização, e procure justificar a diferença. 
+%-------------------------------------------------
+
+\textbf{\\Answer:}\\
+The regularization coefficients for both Q1 and Q2 (coarse and fine search) can be seen in Table \ref{tab:alpha_comp}.
+
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{r|c|c|c|c|}
+            \cline{2-5}
+            & \multicolumn{4}{|c|}{\cellcolor[gray]{0.8}{$\lambda$ optimum}} \\
+            \cline{2-5}
+            & \multicolumn{2}{|c|}{\cellcolor[gray]{0.8}{Q1}} & \multicolumn{2}{|c|}{\cellcolor[gray]{0.8}{Q2}} \\
+            \cline{2-5}
+            & \cellcolor[gray]{0.8}{MSE} & \cellcolor[gray]{0.8}{Accuracy} & \cellcolor[gray]{0.8}{MSE} & \cellcolor[gray]{0.8}{Accuracy} \\
+            \cline{1-5}
+            \multicolumn{1}{|r|}{\cellcolor[gray]{0.8}{coarse search}} & 64   & 1024   & 64   & 256   \\
+            \cline{1-5}
+            \multicolumn{1}{|r|}{\cellcolor[gray]{0.8}{fine search}}   & 51.5 & 1091.8 & 102.7 & 662.7 \\
+            \cline{1-5}
+        \end{tabular}
+    \end{center}
+    \caption{Values of regularization coefficient found in coarse and fine searches in both Q1 and Q2}
+    \label{tab:alpha_comp}
+\end{table}
+
+From now on the regularization coefficient will be just called ``alpha" to simplify the text.
+%
+\paragraph{The results shown in Table \ref{tab:alpha_comp} are curious, since the optimum alpha increased for the MSE criterion, but decreased for the accuracy metric. A higher value of alpha indicates that the weights are being more regularized, suggesting that the model is more flexible.}
+%
+\paragraph{Talking about the ELM in specific, although the results obtained are much better than the linear approach (~95\% against ~85\% of accuracy), the machine is not necessarily ``more flexible" in the sense stated in the previous paragraph. The improvements are achieved mainly because of the non-linearity activation function (tanh, ReLU) than due to flexibility, since the weights of the hidden layer were randomly chosen.}
+%
+\paragraph{The smaller optimum alpha for the accuracy metric suggests a less flexible model for the ELM approach when comparing to the linear model. This can be explained due to the reduced values reaching the output layer (501 vs 785) and also the quality of these signals to perform the linear classification.}
+%
+\paragraph{However, the bigger optimum alpha for the MSE criterion suggests that for these randomly generated weights, the ELM ended with a more flexible model than the linear one, even for a reduced number of signals reaching the linear output classifier layer.}
+
+\newpage
+
+%=================================================
+\subsection{Regularization coefficient for a different initialization}
+%=================================================
+
+\textbf{Question:} \newline
+Mantendo a mesma partição entre conjuntos de treinamento e validação, o que você espera que ocorra com o coeficiente de regularização caso os neurônios da camada intermediária sejam inicializados com pesos sinápticos distintos a cada execução? 
+
+%-------------------------------------------------
+\textbf{\\Answer:}
+\paragraph{As already explained at the answer of the previous question, the flexibility of the model strongly depends on the weights of the hidden layer. By randomly choosing the weights and knowing that the role of the regularization coefficient is to prevent overfitting in a model that is too flexible, the alpha will likely change every time, since for each weights configuration we are dealing with a new problem to solve, looking at the perspective of the output linear layer. The ``ReLU" activation function can also perform a role here, since a portion of the outputs of the hidden layer will be zero depending on the weights generated (and also the input data).}
+%
+\paragraph{In summary, for each randomly generated weights, a new model with a new flexibility will be generated, and depending on the flexibility, more or less regularization will be necessary. Furthermore, as stated at the answer of the previous question, the necessity of regularize the weights of the linear output layer more or less can also change when looking at the accuracy metric or the MSE criterion.}
 
 %=================================================
 \subsection{Modifications aiming better results}
 %=================================================
+
+\textbf{Question:} \newline
+Promova algum tipo de alteração nas especificações da ELM e/ou de seu treinamento de modo a produzir resultados superiores àqueles conquistados ao se seguir o roteiro desta questão. Descreva adequadamente as alterações realizadas.
+
+%-------------------------------------------------
+\textbf{\\Answer:}
+\paragraph{Changing the number of neurons at the hidden layer from 500 to 1000 improved the results, as shown in Table \ref{tab:elm_improved}.}
+
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{r|c|c|} 
+            \cline{2-3}
+            & \multicolumn{2}{|c|}{\cellcolor[gray]{0.8}{Accuracy}} \\
+            \cline{2-3}
+            & \cellcolor[gray]{0.8}{Training set} & \cellcolor[gray]{0.8}{Test set} \\
+            \cline{1-3}
+            \multicolumn{1}{|r|}{\cellcolor[gray]{0.8}{500 neurons}}  & 0.9175 & 0.9194   \\
+            \cline{1-3}
+            \multicolumn{1}{|r|}{\cellcolor[gray]{0.8}{1000 neurons}} & 0.9451 & 0.9448 \\
+            \cline{1-3}
+        \end{tabular}
+    \end{center}
+    \caption{Results comparison for 500 and 1000 neurons at the hidden layer}
+    \label{tab:elm_improved}
+\end{table}
+
+\paragraph{This indicates that the model with 500 neurons at the hidden layer was not flexible enough, operating in underfitting. After increasing to 1000 neurons, more relevant signals are passed to the output layer and the model can make a better classification.}
 
 %=================================================
 \end{document}
