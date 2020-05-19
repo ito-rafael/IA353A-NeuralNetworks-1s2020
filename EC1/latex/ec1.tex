@@ -16,6 +16,7 @@
 \usepackage{ragged2e}               % text alignment
 \usepackage[table]{xcolor}          % change cell color in tables
 %\usepackage{multirow}               % merge rows in table
+%\usepackage[thinc]{esdiff}          % macros for derivatives
 
 \graphicspath{                      % path for figures
     {../figures/} 
@@ -61,27 +62,79 @@
 \newpage
 
 %=================================================
-\section*{Questão 1}
+\section*{Question 1}
+%=================================================
+
+\newpage
+
+%=================================================
+\section*{Question 2}
+%=================================================
+
+\[\|Ax-b\|_{P}^{2}+\|x-x_{0}\|_{Q}^{2}\]
+%------------------------
+\paragraph{Since we are searching for $x$ that minimizes the previous expression, we will calculate the derivative with relation to $x$ and set it equal to zero:}
+    \[\frac{d}{dx} (\|Ax-b\|_{P}^{2}+\|x-x_{0}\|_{Q}^{2}) = 0\]
+%------------------------
+\paragraph{Property used: $\|x\|_{Q}^{2} = x^{T}Qx$}
+    \[\frac{d}{dx} [\overbrace{(Ax-b)^{T} P (Ax-b)}^{\|Ax-b\|_{P}^{2}} + \overbrace{(x-x_0)^T Q (x-x_0)}^{\|x-x_{0}\|_{Q}^{2}}] = 0\]
+%------------------------
+\paragraph{Property used: $(M + N)^T = M^T + N^T$}
+    \[\frac{d}{dx} \{[(Ax)^T-b^T] P (Ax-b) + (x^T-x_0^T) Q (x-x_0)\} = 0\]
+%------------------------
+\paragraph{Property used: $(MN)^T = N^T M^T$}
+    \[\frac{d}{dx} \{[x^TA^T-b^T] P (Ax-b) + (x^T-x_0^T) Q (x-x_0)\} = 0\]
+    \[\frac{d}{dx} [(x^TA^TPAx - x^TA^TPb -b^TPAx + b^TPb) + (x^TQx - x^TQx_0 - x_0^TQx + x_0^TQx_0)] = 0\]
+%------------------------
+\paragraph{Properties used:}
+    \begin{itemize}
+        \item $\frac{d}{dy}(y^TMy) = M^Ty + My$.
+        \item $\frac{d}{dy}(y^TMy) = 2My$, if $M = M^T$ (i.e. $M$ is simetric)
+        \item $\frac{d(Ax)}{dx} = A$
+        \item $\frac{d(x^TA)}{dx} = A^T$
+        \item obs.: $A^TPA$ is simetric, since $(A^TPA)^T = (PA)^T(A^T)^T = A^TP^TA$, but $P^T = P$, since P is simetric. Then $A^TPA = (A^TPA)^T$
+    \end{itemize}
+\paragraph{Using the previous properties, we have:}
+    \[\frac{d}{dx} [(x^TA^TPAx - x^TA^TPb -b^TPAx + b^TPb) + (x^TQx - x^TQx_0 - x_0^TQx + x_0^TQx_0)] = 0\]
+    \[[2A^TPAx - (A^TPb)^T - b^TPA + 0] + [2Qx - (Qx_0)^T - x_0^TQ + 0] = 0\]
+    \[2A^TPAx - (Pb)^T(A^T)^T - b^TPA + 2Qx - x_0^TQ^T - x_0^TQ = 0\]
+    \[2A^TPAx - b^TP^TA - b^TPA + 2Qx - x_0^TQ - x_0^TQ = 0\]
+    \[2A^TPAx - b^TPA - b^TPA + 2Qx - x_0^TQ - x_0^TQ = 0\]
+    \[2A^TPAx - 2b^TPA + 2Qx - 2x_0^TQ = 0\]
+    \[2A^TPAx + 2Qx = 2b^TPA + 2x_0^TQ\]
+    \[A^TPAx + Qx = b^TPA + x_0^TQ\]
+    \[(A^TPA + Q)^{-1}(A^TPA + Q)x = (A^TPA + Q)^{-1}(b^TPA + x_0^TQ)\]
+    \[x = (A^TPA + Q)^{-1}(b^TPA + x_0^TQ)\]
+    \[x = (A^TPA + Q)^{-1}(b^TP^TA + x_0^TQ^T)\]
+    \[x = (A^TPA + Q)^{-1}[(Pb)^TA + (Qx_0)^T]\]
+    \[x = (A^TPA + Q)^{-1}[(A^TPb)^T + (Qx_0)^T]\]
+    \[\boxed{x = (A^TPA + Q)^{-1}(A^TPb + Qx_0)^T}\]
+%------------------------
+%\paragraph{Properties used:}
+%    \begin{itemize}
+%        \item Since $Q$ is simetric, $(Qx_0)^T = Qx_0$
+%        \item Since $P$ is simetric, $(A^TPb)^T = (A^TPb)$
+%    \end{itemize}
+%\paragraph{Then:}
+%    \[x = (A^TPA + Q)^{-1}[(A^TPb)^T + (Qx_0)^T]\]
+%    \[x = (A^TPA + Q)^{-1}(A^TPb + Qx_0)\]
+%------------------------
+\newpage
+
+%=================================================
+\section*{Question 3}
 %=================================================
 
 %=================================================
-\section*{Questão 2}
+\section*{Question 4}
 %=================================================
 
 %=================================================
-\section*{Questão 3}
+\section*{Question 5}
 %=================================================
 
 %=================================================
-\section*{Questão 4}
-%=================================================
-
-%=================================================
-\section*{Questão 5}
-%=================================================
-
-%=================================================
-\section*{Questão 6}
+\section*{Question 6}
 %=================================================
 
 \end{document}
