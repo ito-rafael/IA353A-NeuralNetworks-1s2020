@@ -89,10 +89,10 @@
 \paragraph{Properties used:}
     \begin{itemize}
         \item $\frac{d}{dy}(y^TMy) = M^Ty + My$.
-        \item $\frac{d}{dy}(y^TMy) = 2My$, if $M = M^T$ (i.e. $M$ is simetric)
+        \item $\frac{d}{dy}(y^TMy) = 2My$, if $M = M^T$ (i.e. $M$ is symmetric)
         \item $\frac{d(Ax)}{dx} = A$
         \item $\frac{d(x^TA)}{dx} = A^T$
-        \item obs.: $A^TPA$ is simetric, since $(A^TPA)^T = (PA)^T(A^T)^T = A^TP^TA$, but $P^T = P$, since P is simetric. Then $A^TPA = (A^TPA)^T$
+        \item obs.: $A^TPA$ is symmetric, since $(A^TPA)^T = (PA)^T(A^T)^T = A^TP^TA$, but $P^T = P$, since P is symmetric. Then $A^TPA = (A^TPA)^T$
     \end{itemize}
 \paragraph{Using the previous properties, we have:}
     \[\frac{d}{dx} [(x^TA^TPAx - x^TA^TPb -b^TPAx + b^TPb) + (x^TQx - x^TQx_0 - x_0^TQx + x_0^TQx_0)] = 0\]
@@ -112,8 +112,8 @@
 %------------------------
 %\paragraph{Properties used:}
 %    \begin{itemize}
-%        \item Since $Q$ is simetric, $(Qx_0)^T = Qx_0$
-%        \item Since $P$ is simetric, $(A^TPb)^T = (A^TPb)$
+%        \item Since $Q$ is symmetric, $(Qx_0)^T = Qx_0$
+%        \item Since $P$ is symmetric, $(A^TPb)^T = (A^TPb)$
 %    \end{itemize}
 %\paragraph{Then:}
 %    \[x = (A^TPA + Q)^{-1}[(A^TPb)^T + (Qx_0)^T]\]
@@ -125,10 +125,48 @@
 \section*{Question 3}
 %=================================================
 
+\newpage
+
 %=================================================
 \section*{Question 4}
 %=================================================
 
+\paragraph{The Taylor series expansion of a function $f(x,y)$ in a neighborhood around $(x_0,y_0)$ is as follows:}
+    \[f(x,y) \approx f(x_0,y_0) + \underbrace{f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)}_{\text{first order term}} + ...\]
+
+\paragraph{Ignoring terms from second order and higher, and considering the linearized function given $f_L(x,y)=2x+py-8$, we have:}
+    \[f_L(x,y) = f(x_0,y_0) + f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)\]
+
+\paragraph{Taking $f(x,y) = x\sqrt y$, we have:}
+\begin{itemize}
+    \item $f_x(x,y) = \sqrt y$
+    \item $f_y(x,y) = \frac{x}{2\sqrt y}$
+\end{itemize}
+    \[2x+py-8 = \underbrace{x_0\sqrt y_0}_{f(x_0,y_0)} + \underbrace{\sqrt y_0}_{f_x(x_0,y_0)}(x-x_0) + \underbrace{\frac{x_0}{2\sqrt y_0}}_{f_y(x_0,y_0)}(y-y_0)\]
+    \[2x+py-8 = x_0\sqrt y_0 + x\sqrt y_0 - x_0\sqrt y_0 + \frac{x_0 y}{2\sqrt y_0} - \frac{x_0 y_0}{2\sqrt y_0}\]
+    \[2x+py-8 =  \sqrt y_0 x + \left(\frac{x_0}{2\sqrt y_0}\right) y - \left(\frac{x_0 y_0}{2\sqrt y_0}\right)\]
+    
+    \paragraph{Now, if we compare the terms that only depend on $x$, that only depend on $y$ and the independent terms (that only depend on $x_0$ and $y_0$), we have:}
+\begin{itemize}
+    \item (i)   $ 2 = \sqrt y_0 \implies \boxed{y_0 = 4}$ 
+    \item (ii)  $ p = \left(\frac{x_0}{2\sqrt y_0}\right) $
+    \item (iii) $ 8 = \left(\frac{x_0 y_0}{2\sqrt y_0}\right) $
+\end{itemize}
+
+\paragraph{Substituting in (i) in (iii):}
+    \[\frac{x_0 y_0}{2\sqrt y_0} = 8\]
+    \[\frac{4 x_0}{2\cdot2} = 8\]
+    \[\boxed{x_0 = 8}\]
+
+\paragraph{Substituting in (ii):}
+    \[p = \frac{x_0}{2\sqrt y_0}\]
+    \[p = \frac{8}{2\cdot2}\]
+    \[\boxed{p = 2}\]
+
+    \paragraph{So the point from where the function was linearized is $(x_0,y_0) = (8,4)$ and the coefficient $p = 2$, then $f_L(x,y) = 2x + 2y -8$.}
+
+\newpage
+ 
 %=================================================
 \section*{Question 5}
 %=================================================
