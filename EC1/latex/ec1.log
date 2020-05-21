@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.6)  19 MAY 2020 22:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.6)  21 MAY 2020 17:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -302,36 +302,58 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (./ec1.aux)
+) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count121
+\lst@gtempboxa=\box33
+\lst@token=\toks27
+\lst@length=\count122
+\lst@currlwidth=\dimen136
+\lst@column=\count123
+\lst@pos=\count124
+\lst@lostspace=\dimen137
+\lst@width=\dimen138
+\lst@newlines=\count125
+\lst@lineno=\count126
+\lst@maxwidth=\dimen139
+ (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count127
+\lst@skipnumbers=\count128
+\lst@framebox=\box34
+) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+ (./ec1.aux)
 \openout1 = `ec1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen136
-\scratchbox=\box33
-\nofMPsegments=\count122
-\nofMParguments=\count123
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen137
-\MPnumerator=\count125
-\makeMPintoPDFobject=\count126
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count129
+\scratchdimen=\dimen140
+\scratchbox=\box35
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen141
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -347,19 +369,20 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 28.
+\AtBeginShipoutBox=\box36
+Package hyperref Info: Link coloring OFF on input line 59.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count127
+\c@section@level=\count135
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
  (./ec1.out) (./ec1.out)
 \@outlinefile=\write3
 \openout3 = `ec1.out'.
@@ -400,50 +423,99 @@ LaTeX Info: Redefining \nameref on input line 28.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 28.
-<../figures/unicamp.png, id=4, 481.8pt x 481.8pt>
+LaTeX Info: Redefining \selectfont on input line 59.
+\c@lstlisting=\count136
+<../figures/unicamp.png, id=32, 481.8pt x 481.8pt>
 File: ../figures/unicamp.png Graphic file (type png)
 <use ../figures/unicamp.png>
-Package pdftex.def Info: ../figures/unicamp.png  used on input line 35.
+Package pdftex.def Info: ../figures/unicamp.png  used on input line 66.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<../figures/feec.jpg, id=6, 863.225pt x 357.335pt>
+<../figures/feec.jpg, id=34, 863.225pt x 357.335pt>
 File: ../figures/feec.jpg Graphic file (type jpg)
 <use ../figures/feec.jpg>
-Package pdftex.def Info: ../figures/feec.jpg  used on input line 42.
+Package pdftex.def Info: ../figures/feec.jpg  used on input line 73.
 (pdftex.def)             Requested size: 42.67912pt x 17.66605pt.
  [1
 
-{/home/rafael/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../figures/unicamp.png> <../figures/feec.jpg>] [2]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 91.
+{/home/rafael/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../figures/unicamp.png> <../figures/feec.jpg>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 109.
+ (../Q1/sgd_under.m)
+<../figures/Q1/sgd_under_step_0_1.png, id=45, 1204.5pt x 903.375pt>
+File: ../figures/Q1/sgd_under_step_0_1.png Graphic file (type png)
+<use ../figures/Q1/sgd_under_step_0_1.png>
+Package pdftex.def Info: ../figures/Q1/sgd_under_step_0_1.png  used on input line 117.
+(pdftex.def)             Requested size: 213.39566pt x 160.03659pt.
+<../figures/Q1/sgd_under_step_0_001.png, id=46, 1204.5pt x 903.375pt>
+File: ../figures/Q1/sgd_under_step_0_001.png Graphic file (type png)
+<use ../figures/Q1/sgd_under_step_0_001.png>
+Package pdftex.def Info: ../figures/Q1/sgd_under_step_0_001.png  used on input line 125.
+(pdftex.def)             Requested size: 213.39566pt x 160.03659pt.
+ [2 <../figures/Q1/sgd_under_step_0_1.png (PNG copy)> <../figures/Q1/sgd_under_step_0_001.png (PNG copy)>] (../Q1/sgd_over.m)
+<../figures/Q1/sgd_over_step_0_1.png, id=88, 1204.5pt x 903.375pt>
+File: ../figures/Q1/sgd_over_step_0_1.png Graphic file (type png)
+<use ../figures/Q1/sgd_over_step_0_1.png>
+Package pdftex.def Info: ../figures/Q1/sgd_over_step_0_1.png  used on input line 150.
+(pdftex.def)             Requested size: 213.39566pt x 160.03659pt.
+<../figures/Q1/sgd_over_step_0_001.png, id=89, 1204.5pt x 903.375pt>
+File: ../figures/Q1/sgd_over_step_0_001.png Graphic file (type png)
+<use ../figures/Q1/sgd_over_step_0_001.png>
+Package pdftex.def Info: ../figures/Q1/sgd_over_step_0_001.png  used on input line 158.
+(pdftex.def)             Requested size: 213.39566pt x 160.03659pt.
+ [3 <../figures/Q1/sgd_over_step_0_1.png (PNG copy)> <../figures/Q1/sgd_over_step_0_001.png (PNG copy)>] (../Q1/adam_under.m)
+<../figures/Q1/adam_under_step_0_1.png, id=127, 1204.5pt x 903.375pt>
+File: ../figures/Q1/adam_under_step_0_1.png Graphic file (type png)
+<use ../figures/Q1/adam_under_step_0_1.png>
+Package pdftex.def Info: ../figures/Q1/adam_under_step_0_1.png  used on input line 187.
+(pdftex.def)             Requested size: 213.39566pt x 160.03659pt.
+<../figures/Q1/adam_under_step_0_001.png, id=128, 1204.5pt x 903.375pt>
+File: ../figures/Q1/adam_under_step_0_001.png Graphic file (type png)
+<use ../figures/Q1/adam_under_step_0_001.png>
+Package pdftex.def Info: ../figures/Q1/adam_under_step_0_001.png  used on input line 195.
+(pdftex.def)             Requested size: 213.39566pt x 160.03659pt.
+ [4 <../figures/Q1/adam_under_step_0_1.png (PNG copy)> <../figures/Q1/adam_under_step_0_001.png (PNG copy)>] (../Q1/adam_over.m)
+<../figures/Q1/adam_over_step_0_1.png, id=181, 1204.5pt x 903.375pt>
+File: ../figures/Q1/adam_over_step_0_1.png Graphic file (type png)
+<use ../figures/Q1/adam_over_step_0_1.png>
+Package pdftex.def Info: ../figures/Q1/adam_over_step_0_1.png  used on input line 220.
+(pdftex.def)             Requested size: 213.39566pt x 160.03659pt.
+<../figures/Q1/adam_over_step_0_001.png, id=182, 1204.5pt x 903.375pt>
+File: ../figures/Q1/adam_over_step_0_001.png Graphic file (type png)
+<use ../figures/Q1/adam_over_step_0_001.png>
+Package pdftex.def Info: ../figures/Q1/adam_over_step_0_001.png  used on input line 228.
+(pdftex.def)             Requested size: 213.39566pt x 160.03659pt.
+ [5 <../figures/Q1/adam_over_step_0_1.png (PNG copy)> <../figures/Q1/adam_over_step_0_001.png (PNG copy)>] [6]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 285.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
- [3] [4] [5] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 285.
+ [7] [8] [9] [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
  (./ec1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
 Package rerunfilecheck Info: File `ec1.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
+(rerunfilecheck)             Checksum: 4F6199AA8892BA6090BB9AB5750F1B6C;431.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
  ) 
 Here is how much of TeX's memory you used:
- 8540 strings out of 492167
- 125092 string characters out of 6131559
- 250076 words of memory out of 5000000
- 12780 multiletter control sequences out of 15000+600000
- 9023 words of font info for 33 fonts, out of 8000000 for 9000
+ 11032 strings out of 492167
+ 158289 string characters out of 6131559
+ 584103 words of memory out of 5000000
+ 15066 multiletter control sequences out of 15000+600000
+ 9658 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,8n,46p,306b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on ec1.pdf (7 pages, 188102 bytes).
+ 45i,10n,46p,306b,1771s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on ec1.pdf (11 pages, 485246 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 388 PDF objects out of 1000 (max. 8388607)
+ 345 compressed objects within 4 object streams
+ 207 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
