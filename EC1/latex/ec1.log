@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.6)  22 MAY 2020 00:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.6)  22 MAY 2020 01:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -492,30 +492,30 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 273.
- [7] [8] [9] [10] [11] [12] [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
+ [7] [8] [9] [10] [11] [12] [13] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 580.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 580.
  (./ec1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 580.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 580.
 Package rerunfilecheck Info: File `ec1.out' has not changed.
 (rerunfilecheck)             Checksum: 4F6199AA8892BA6090BB9AB5750F1B6C;431.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 549.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 580.
  ) 
 Here is how much of TeX's memory you used:
- 11079 strings out of 492167
- 158757 string characters out of 6131559
+ 11089 strings out of 492167
+ 158863 string characters out of 6131559
  584003 words of memory out of 5000000
  15070 multiletter control sequences out of 15000+600000
  9658 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,17n,46p,1267b,1771s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on ec1.pdf (14 pages, 507416 bytes).
+Output written on ec1.pdf (15 pages, 512416 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 405 compressed objects within 5 object streams
- 250 named destinations out of 1000 (max. 500000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 420 compressed objects within 5 object streams
+ 260 named destinations out of 1000 (max. 500000)
  107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
