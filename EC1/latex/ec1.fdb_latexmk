@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1590094301 "ec1.tex" "ec1.pdf" "ec1" 1590094762
+["pdflatex"] 1590111679 "ec1.tex" "ec1.pdf" "ec1" 1590111679
   "../Q1/adam_over.m" 1590094300 1213 1c478a69b5985655df055617f4e82310 ""
   "../Q1/adam_under.m" 1590094293 1228 d952f758ea42d66ac9dbcc4a61d935bb ""
   "../Q1/sgd_over.m" 1590089237 739 d6e8099e64823c7ae8ca6c15bea34359 ""
@@ -103,11 +103,11 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1572595918 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1588776570 8044938 d53b80516de230b84454862c99416847 ""
-  "ec1.aux" 1590094301 7954 0218028bf9631057c37ff0b4bfe069d3 "pdflatex"
-  "ec1.out" 1590094301 431 4f6199aa8892ba6090bb9ab5750f1b6c "pdflatex"
-  "ec1.tex" 1590094359 14415 596a5f55bb1fee6ff51faa6a5152944d ""
+  "ec1.aux" 1590111675 15973 7780a7b4c4a0fb75835f55720aa073a8 "pdflatex"
+  "ec1.out" 1590111675 431 4f6199aa8892ba6090bb9ab5750f1b6c "pdflatex"
+  "ec1.tex" 1590111677 22848 d1ae0391a79ae5f8ae4b91ac92a75fa9 ""
   (generated)
-  "ec1.log"
   "ec1.aux"
   "ec1.pdf"
+  "ec1.log"
   "ec1.out"
