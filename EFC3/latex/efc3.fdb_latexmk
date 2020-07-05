@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1593900691 "efc3.tex" "efc3.pdf" "efc3" 1593900691
+["pdflatex"] 1593964281 "efc3.tex" "efc3.pdf" "efc3" 1593964282
   "../figures/feec.jpg" 1574616926 23748 70e97f73b303fb0bb3a46c140ac489a1 ""
   "../figures/unicamp.png" 1574616926 20799 22e8b217252e731615341a48a090e52d ""
   "/home/rafael/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1576676982 334320 d10c2901904b0a572e57c10ac4826b67 ""
@@ -90,11 +90,11 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1591545468 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1592957515 2514051 fc99ccf9f0ad5183264a2b80f9b80b8e ""
-  "efc3.aux" 1593900691 1387 450c1bf2726522e36632cbf7fb7591db "pdflatex"
-  "efc3.out" 1593900691 179 d72bd3d59d17586568095c4b6c21c7f9 "pdflatex"
-  "efc3.tex" 1593900690 2757 68984a7e51c0d888d2899aaaf76ffa9a ""
+  "efc3.aux" 1593964282 1511 64534c8acc7e56c68d390ffeccc2a153 "pdflatex"
+  "efc3.out" 1593964282 246 89bff39fb238bee0529652f12c4b0519 "pdflatex"
+  "efc3.tex" 1593964279 3072 8d34d42eeb545d36f38e25e75c9be19a ""
   (generated)
-  "efc3.pdf"
-  "efc3.aux"
   "efc3.log"
+  "efc3.aux"
+  "efc3.pdf"
   "efc3.out"
