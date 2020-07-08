@@ -94,12 +94,58 @@
 \subsection{P1 - NYSP}
 %-------------------------------------------------
 
+%------------------------
+\subsubsection{Resumo geral}
+%------------------------
+Forneça o notebook devidamente executado, contendo, ao final, um resumo geral do que foi trabalhado em cada seção.
+
+\href{https://drive.google.com/file/d/16gcoZosVIk0VwRFvws91Ul5WkAWhn0hT/view?usp=sharing}{https://drive.google.com/file/d/16gcoZosVIk0VwRFvws91Ul5WkAWhn0hT/view?usp=sharing}
+
+%------------------------
+\subsubsection{Preditor linear}
+%------------------------
+Com o foco no desempenho do preditor linear, procure apresentar argumentos capazes de sustentar o fato de a predição  proposta corresponder basicamente a uma versão atrasada da própria série temporal.
+
+Analisando os pesos do preditor linear, podemos ver que o peso referente a entrada mais recente apresenta o maior peso dentre todos. Isso quer dizer que a última entrada vai ser a mais relevante para a predição do próximo passo. Isso faz com que a predição se assemelhe bastante ao valor imediatamente anterior, isto é, isso faz com que a predição seja semelhante a uma versão atrasada da série.
+
+%------------------------
+\subsubsection{Preditor não-linear}
+%------------------------
+Embora seja possível obter, com os modelos de predição não-lineares, um desempenho similar àquele do preditor linear (isso não é solicitado ao aluno, no entanto), explique por que o preditor linear é tão competente nesta tarefa de predição específica.
+
+%------------------------
+\subsubsection{Offset}
+%------------------------
+Procure justificar também por que alguns preditores não-lineares estão fornecendo uma predição que, aparentemente, falha apenas no offset da predição, ou seja, acompanham o comportamento da predição, mas erram no seu valor médio.
+
 %-------------------------------------------------
 \subsection{P2 - NLTS}
 %-------------------------------------------------
 
+%------------------------
+\subsubsection{Resumo Geral}
+%------------------------
+Forneça o notebook devidamente executado, contendo, ao final, um resumo geral do que foi trabalhado em cada seção. Forneça, por exemplo, o número de atrasos da série temporal que está sendo considerado como entrada dos preditores e como está sendo feita a regularização dos modelos, quando for o caso.
+
+\href{https://drive.google.com/file/d/1tfdgQF8e4sri5eUNZ5AqUNOX9_cRdBnG/view?usp=sharing}{https://drive.google.com/file/d/1tfdgQF8e4sri5eUNZ5AqUNOX9\_cRdBnG/view?usp=sharing}
+
+%------------------------
+\subsubsection{Preditor linear}
+%------------------------
+Dadas as características da série temporal, explique o motivo pelo qual o preditor linear saiu de primeiro colocado em desempenho, na Parte 1, para último colocado nesta Parte 2. 
+
+%------------------------
+\subsubsection{Preditor de múltiplos passos à frente}
+%------------------------
+Escolha um dos preditores e implemente a predição de múltiplos passos à frente (several time steps ahead), explicando como funciona a sua metodologia. 
+
+%------------------------
+\subsubsection{}
+%------------------------
+Sem a necessidade de implementações práticas, explique que modificações metodológicas você faria caso se constatasse que a série temporal é não-estacionária, mas com uma variação lenta de suas propriedades estatísticas ao longo do tempo.
+
 %-------------------------------------------------
-\subsection{P3 - Sunspot}
+\subsubsection{P3 - Sunspot}
 %-------------------------------------------------
 
 \href{https://drive.google.com/file/d/1lC1S8KexCw_3wM_IMTYd2vussNTS1cDC/view?usp=sharing}{https://drive.google.com/file/d/1lC1S8KexCw\_3wM\_IMTYd2vussNTS1cDC/view?usp=sharing}
