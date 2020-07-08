@@ -371,13 +371,13 @@
 
     
     \hypertarget{ia353---redes-neurais}{%
-\section{IA353 - Redes Neurais}\label{ia353---redes-neurais}}
+\section*{IA353 - Redes Neurais}\label{ia353---redes-neurais}}
 
 \hypertarget{efc3---questuxe3o-5}{%
-\section{EFC3 - Questão 5}\label{efc3---questuxe3o-5}}
+\section*{EFC3 - Questão 5}\label{efc3---questuxe3o-5}}
 
     \hypertarget{dae---denoising-autoencoder-training-and-visualization}{%
-\subsection{DAE - Denoising Autoencoder (training and
+\subsection*{DAE - Denoising Autoencoder (training and
 visualization)}\label{dae---denoising-autoencoder-training-and-visualization}}
 
 dataset: CIFAR-10
@@ -385,7 +385,7 @@ dataset: CIFAR-10
     \textbf{Professor:} Fernando J. Von Zuben \textbf{Aluno(a):} Rafael Ito
 
     \hypertarget{imports}{%
-\subsubsection{5.1. Imports}\label{imports}}
+\subsubsection*{5.1. Imports}\label{imports}}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{ }{\boxspacing}
@@ -475,7 +475,7 @@ CPU cores: 2
     \end{Verbatim}
 
     \hypertarget{reading-the-data}{%
-\subsubsection{5.2. Reading the data}\label{reading-the-data}}
+\subsubsection*{5.2. Reading the data}\label{reading-the-data}}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{ }{\boxspacing}
@@ -524,11 +524,6 @@ CPU cores: 2
 \end{Verbatim}
 \end{tcolorbox}
 
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{118430Q5_2_files/118430Q5_2_13_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
     Original images
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
@@ -639,7 +634,7 @@ floats or [0..255] for integers).
     { \hspace*{\fill} \\}
     
     \hypertarget{proposal-for-the-autoencoder-architecture}{%
-\subsubsection{5.3 Proposal for the autoencoder
+\subsubsection*{5.3 Proposal for the autoencoder
 architecture}\label{proposal-for-the-autoencoder-architecture}}
 
     Architecture and training history:
@@ -672,37 +667,37 @@ Reconstruction OK!
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{input\PYZus{}img} \PY{o}{=} \PY{n}{Input}\PY{p}{(}\PY{n}{shape}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{32}\PY{p}{,}\PY{l+m+mi}{32}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{,}\PY{p}{)}\PY{p}{)}
+\PY{n}{input\PYZus{}img} \PY{o}{=} \PY{n}{Input}\PY{p}{(}\PY{n}{shape}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{32}\PY{p}{,}\PY{l+m+mi}{32}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{,}\PY{p}{)}\PY{p}{)}                                                             \PY{c+c1}{\PYZsh{} (50000,32,32,3)}
 \PY{c+c1}{\PYZsh{}==========================================================}
-\PY{n}{encoded} \PY{o}{=} \PY{n}{Conv2D}\PY{p}{(}\PY{l+m+mi}{32}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{relu}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{input\PYZus{}img}\PY{p}{)}   \PY{c+c1}{\PYZsh{} (50000,32,32,32)}
+\PY{n}{encoded} \PY{o}{=} \PY{n}{Conv2D}\PY{p}{(}\PY{l+m+mi}{32}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{relu}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{input\PYZus{}img}\PY{p}{)}           \PY{c+c1}{\PYZsh{} (50000,32,32,32)}
 \PY{n}{encoded} \PY{o}{=} \PY{n}{BatchNormalization}\PY{p}{(}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}
 \PY{n}{encoded} \PY{o}{=} \PY{n}{Dropout}\PY{p}{(}\PY{l+m+mf}{0.5}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}
 \PY{c+c1}{\PYZsh{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
-\PY{n}{skip} \PY{o}{=} \PY{n}{Conv2D}\PY{p}{(}\PY{l+m+mi}{64}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{k+kc}{None}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}          \PY{c+c1}{\PYZsh{} (50000,16,16,32)}
+\PY{n}{skip} \PY{o}{=} \PY{n}{Conv2D}\PY{p}{(}\PY{l+m+mi}{64}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{k+kc}{None}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}                  \PY{c+c1}{\PYZsh{} (50000,16,16,32)}
 \PY{n}{encoded} \PY{o}{=} \PY{n}{LeakyReLU}\PY{p}{(}\PY{p}{)}\PY{p}{(}\PY{n}{skip}\PY{p}{)}
 \PY{n}{encoded} \PY{o}{=} \PY{n}{BatchNormalization}\PY{p}{(}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}
 \PY{n}{encoded} \PY{o}{=} \PY{n}{Dropout}\PY{p}{(}\PY{l+m+mf}{0.5}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}
 \PY{c+c1}{\PYZsh{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
-\PY{n}{encoded} \PY{o}{=} \PY{n}{Conv2D}\PY{p}{(}\PY{l+m+mi}{128}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{relu}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}     \PY{c+c1}{\PYZsh{} (50000,8,8,64)}
+\PY{n}{encoded} \PY{o}{=} \PY{n}{Conv2D}\PY{p}{(}\PY{l+m+mi}{128}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{relu}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}            \PY{c+c1}{\PYZsh{} (50000,8,8,64)}
 \PY{n}{encoded} \PY{o}{=} \PY{n}{BatchNormalization}\PY{p}{(}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}
 \PY{c+c1}{\PYZsh{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
 \PY{n}{encoded} \PY{o}{=} \PY{n}{Flatten}\PY{p}{(}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}                                \PY{c+c1}{\PYZsh{} (50000,1024)}
 \PY{c+c1}{\PYZsh{}==========================================================}
-\PY{n}{encoded} \PY{o}{=} \PY{n}{Dense}\PY{p}{(}\PY{l+m+mi}{50}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{k+kc}{None}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}                \PY{c+c1}{\PYZsh{} (50000,10) \PYZhy{}\PYZhy{}\PYZgt{} bottleneck}
+\PY{n}{encoded} \PY{o}{=} \PY{n}{Dense}\PY{p}{(}\PY{l+m+mi}{50}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{k+kc}{None}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}               \PY{c+c1}{\PYZsh{} (50000,10) \PYZhy{}\PYZhy{}\PYZgt{} bottleneck}
 \PY{c+c1}{\PYZsh{}==========================================================}
 \PY{n}{decoded} \PY{o}{=} \PY{n}{Dense}\PY{p}{(}\PY{l+m+mi}{2048}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tanh}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{encoded}\PY{p}{)}           \PY{c+c1}{\PYZsh{} (50000,1152)}
-\PY{n}{decoded} \PY{o}{=} \PY{n}{Reshape}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{128}\PY{p}{)}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}                                                         \PY{c+c1}{\PYZsh{} (50000,3,3,128)}
+\PY{n}{decoded} \PY{o}{=} \PY{n}{Reshape}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{128}\PY{p}{)}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}                                                         \PY{c+c1}{\PYZsh{} (50000,4,4,128)}
 \PY{c+c1}{\PYZsh{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
-\PY{n}{decoded} \PY{o}{=} \PY{n}{Conv2DTranspose}\PY{p}{(}\PY{l+m+mi}{64}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{relu}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}    \PY{c+c1}{\PYZsh{} (50000,7,7,64)}
+\PY{n}{decoded} \PY{o}{=} \PY{n}{Conv2DTranspose}\PY{p}{(}\PY{l+m+mi}{64}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{relu}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}     \PY{c+c1}{\PYZsh{} (50000,8,8,64)}
 \PY{n}{decoded} \PY{o}{=} \PY{n}{add}\PY{p}{(}\PY{p}{[}\PY{n}{decoded}\PY{p}{,} \PY{n}{skip}\PY{p}{]}\PY{p}{)}
 \PY{n}{decoded} \PY{o}{=} \PY{n}{LeakyReLU}\PY{p}{(}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}
 \PY{n}{decoded} \PY{o}{=} \PY{n}{BatchNormalization}\PY{p}{(}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}
 \PY{c+c1}{\PYZsh{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
-\PY{n}{decoded} \PY{o}{=} \PY{n}{Conv2DTranspose}\PY{p}{(}\PY{l+m+mi}{32}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{k+kc}{None}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}    \PY{c+c1}{\PYZsh{} (50000,8,8,64)}
+\PY{n}{decoded} \PY{o}{=} \PY{n}{Conv2DTranspose}\PY{p}{(}\PY{l+m+mi}{32}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{k+kc}{None}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}       \PY{c+c1}{\PYZsh{} (50000,16,16,32)}
 \PY{n}{decoded} \PY{o}{=} \PY{n}{BatchNormalization}\PY{p}{(}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}
 \PY{n}{decoded} \PY{o}{=} \PY{n}{Dropout}\PY{p}{(}\PY{l+m+mf}{0.5}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}
 \PY{c+c1}{\PYZsh{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
-\PY{n}{decoded} \PY{o}{=} \PY{n}{Conv2DTranspose}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sigmoid}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}   \PY{c+c1}{\PYZsh{} (50000,28,28,1)}
+\PY{n}{decoded} \PY{o}{=} \PY{n}{Conv2DTranspose}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{n}{strides}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sigmoid}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{padding}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{same}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{(}\PY{n}{decoded}\PY{p}{)}   \PY{c+c1}{\PYZsh{} (50000,32,32,3)}
 \PY{c+c1}{\PYZsh{}==========================================================}
 \PY{n}{autoencoder} \PY{o}{=} \PY{n}{Model}\PY{p}{(}\PY{n+nb}{input}\PY{o}{=}\PY{n}{input\PYZus{}img}\PY{p}{,} \PY{n}{output}\PY{o}{=}\PY{n}{decoded}\PY{p}{)}
 \end{Verbatim}
@@ -883,7 +878,7 @@ Epoch 10/10
     { \hspace*{\fill} \\}
     
     \hypertarget{comparison-between-original-noisy-and-denoised-images}{%
-\subsubsection{5.4 Comparison between original, noisy and denoised
+\subsubsection*{5.4 Comparison between original, noisy and denoised
 images}\label{comparison-between-original-noisy-and-denoised-images}}
 
     \begin{itemize}

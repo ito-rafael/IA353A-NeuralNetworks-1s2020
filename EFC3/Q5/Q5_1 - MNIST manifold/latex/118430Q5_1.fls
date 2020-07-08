@@ -1,4 +1,4 @@
-PWD /home/rafael/RAFAEL/UNICAMP/IA353A - Redes Neurais (1s2020)/IA353A-NeuralNetworks_1s2020/EFC3/Q5
+PWD /home/rafael/RAFAEL/UNICAMP/IA353A - Redes Neurais (1s2020)/IA353A-NeuralNetworks_1s2020/EFC3/Q5/Q5_1 - MNIST manifold/latex
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT 118430Q5_1.tex
@@ -258,10 +258,10 @@ INPUT 118430Q5_1.out
 INPUT 118430Q5_1.out
 INPUT 118430Q5_1.out
 INPUT 118430Q5_1.out
-OUTPUT 118430Q5_1.pdf
 INPUT ./118430Q5_1.out
 INPUT ./118430Q5_1.out
 OUTPUT 118430Q5_1.out
+OUTPUT 118430Q5_1.pdf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/share/texmf-dist/tex/latex/psnfss/ot1ppl.fd
