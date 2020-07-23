@@ -1,0 +1,146 @@
+\documentclass[a4paper]{article}    % define document layout
+%\documentclass[draft]{article}     % use draft option in packages
+%-----------------------------
+% preamble
+%-----------------------------
+\usepackage[sumlimits,]{amsmath}    % math equations and formulas
+\usepackage[utf8]{inputenc}         % use UTF-8 encoding
+\usepackage[english]{babel}         % use English language
+\usepackage{graphicx}              % insert images
+%\usepackage[draft]{graphicx}        % do not render figures
+\usepackage{subcaption}             % multiple images in one figure
+\usepackage{hyperref}               % hyperlinks
+\usepackage{float}                  % floating objects (figures, tables)
+\usepackage{geometry}               % page size and margins
+\geometry{a4paper, margin=1in}      % margins
+\usepackage{ragged2e}               % text alignment
+\usepackage[table]{xcolor}          % change cell color in tables
+%\usepackage{multirow}               % merge rows in table
+%\usepackage[thinc]{esdiff}          % macros for derivatives
+
+% MATLAB code
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\usepackage{xcolor}
+
+\graphicspath{                      % path for figures
+    {../figures/} 
+    {../figures/Q8/} 
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+%-----------------------------
+% body
+%-----------------------------
+\begin{document}
+
+\begin{figure}
+    \centering
+    % UNICAMP logo
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1.5cm]{unicamp}
+%        \label{fig:unicamp}
+    \end{subfigure}
+    \hfill
+    % FEEC logo
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1.5cm]{feec}
+%        \label{fig:feec}
+    \end{subfigure}
+\end{figure}
+
+\title{
+    \vspace{5cm}
+    IA353A - Neural Networks\\
+    EFC4
+    \vspace{1cm}
+}
+\author{
+    Rafael Claro Ito\\
+    (R.A.: 118430)
+    \vspace{11cm}
+}
+%R.A.: 118430
+%ito.rafael@gmail.com
+\date{July 2020}
+\maketitle
+\newpage
+
+%=================================================
+\section*{Question 8: RL}
+%=================================================
+\addtocounter{section}{8}
+
+%------------------------
+\subsection{Training results and two study cases}
+%------------------------
+
+%------------------------
+\subsection{Q-value for three different states}
+%------------------------
+
+%------------------------
+\subsection{RMS during the training}
+%------------------------
+
+%------------------------
+\subsection{Experience replay}
+%------------------------
+
+%=================================================
+\section{Question 9: GAN}
+%=================================================
+
+%------------------------
+\subsection{MNIST}
+%------------------------
+
+%------------------------
+\subsection{CIFAR-100 (class: oak tree)}
+%------------------------
+
+%=================================================
+\section{Question 10: NLP}
+%=================================================
+
+%------------------------
+\subsection{Word2Vec}
+%------------------------
+
+%------------------------
+\subsection{t-SNE}
+%------------------------
+
+%------------------------
+\subsection{Results discussion}
+%------------------------
+
+%=================================================
+
+\end{document}
