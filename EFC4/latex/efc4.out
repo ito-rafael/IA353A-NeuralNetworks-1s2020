@@ -10,7 +10,7 @@
 \BOOKMARK [2][-]{subsection.8.4}{Experience replay}{}% 10
 \BOOKMARK [1][-]{section.9}{Question 9: GAN}{}% 11
 \BOOKMARK [2][-]{subsection.9.1}{MNIST}{section.9}% 12
-\BOOKMARK [2][-]{subsection.9.2}{CIFAR-100 \(class: oak tree\)}{section.9}% 13
+\BOOKMARK [2][-]{subsection.9.2}{Fashion MNIST}{section.9}% 13
 \BOOKMARK [1][-]{section.10}{Question 10: NLP}{}% 14
 \BOOKMARK [2][-]{subsection.10.1}{Word2Vec}{section.10}% 15
 \BOOKMARK [2][-]{subsection.10.2}{t-SNE}{section.10}% 16

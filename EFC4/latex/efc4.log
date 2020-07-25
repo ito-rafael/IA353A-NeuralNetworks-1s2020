@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.8)  25 JUL 2020 16:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.8)  25 JUL 2020 20:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,22 +337,22 @@ File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count282
 \l__pdf_internal_box=\box53
 ) (./efc4.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count283
@@ -378,7 +378,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 60.
+Package hyperref Info: Link coloring OFF on input line 63.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -388,9 +388,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count289
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
-LaTeX Info: Redefining \nameref on input line 60.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
  (./efc4.out) (./efc4.out)
 \@outlinefile=\write3
 
@@ -429,17 +429,17 @@ LaTeX Info: Redefining \nameref on input line 60.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 60.
+LaTeX Info: Redefining \selectfont on input line 63.
 \c@lstlisting=\count290
 <../figures/unicamp.png, id=72, 481.8pt x 481.8pt>
 File: ../figures/unicamp.png Graphic file (type png)
 <use ../figures/unicamp.png>
-Package pdftex.def Info: ../figures/unicamp.png  used on input line 67.
+Package pdftex.def Info: ../figures/unicamp.png  used on input line 70.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
 <../figures/feec.jpg, id=74, 863.225pt x 357.335pt>
 File: ../figures/feec.jpg Graphic file (type jpg)
 <use ../figures/feec.jpg>
-Package pdftex.def Info: ../figures/feec.jpg  used on input line 74.
+Package pdftex.def Info: ../figures/feec.jpg  used on input line 77.
 (pdftex.def)             Requested size: 42.67912pt x 17.66605pt.
  [1
 
@@ -447,135 +447,186 @@ Package pdftex.def Info: ../figures/feec.jpg  used on input line 74.
 <../figures/Q8/maze1-maze.png, id=86, 236.885pt x 237.88875pt>
 File: ../figures/Q8/maze1-maze.png Graphic file (type png)
 <use ../figures/Q8/maze1-maze.png>
-Package pdftex.def Info: ../figures/Q8/maze1-maze.png  used on input line 113.
+Package pdftex.def Info: ../figures/Q8/maze1-maze.png  used on input line 116.
 (pdftex.def)             Requested size: 142.26378pt x 142.86864pt.
 <../figures/Q8/maze1-case1.png, id=87, 233.87375pt x 235.88126pt>
 File: ../figures/Q8/maze1-case1.png Graphic file (type png)
 <use ../figures/Q8/maze1-case1.png>
-Package pdftex.def Info: ../figures/Q8/maze1-case1.png  used on input line 153.
+Package pdftex.def Info: ../figures/Q8/maze1-case1.png  used on input line 156.
 (pdftex.def)             Requested size: 142.26378pt x 143.49142pt.
 <../figures/Q8/maze1-case2.png, id=88, 231.86626pt x 236.885pt>
 File: ../figures/Q8/maze1-case2.png Graphic file (type png)
 <use ../figures/Q8/maze1-case2.png>
-Package pdftex.def Info: ../figures/Q8/maze1-case2.png  used on input line 160.
+Package pdftex.def Info: ../figures/Q8/maze1-case2.png  used on input line 163.
 (pdftex.def)             Requested size: 142.26378pt x 145.34544pt.
  [2 <../figures/Q8/maze1-maze.png> <../figures/Q8/maze1-case1.png> <../figures/Q8/maze1-case2.png>]
 <../figures/Q8/maze2-maze.png, id=103, 235.88126pt x 238.8925pt>
 File: ../figures/Q8/maze2-maze.png Graphic file (type png)
 <use ../figures/Q8/maze2-maze.png>
-Package pdftex.def Info: ../figures/Q8/maze2-maze.png  used on input line 173.
+Package pdftex.def Info: ../figures/Q8/maze2-maze.png  used on input line 176.
 (pdftex.def)             Requested size: 142.26378pt x 144.08022pt.
 <../figures/Q8/maze2-case1.png, id=104, 236.885pt x 239.89626pt>
 File: ../figures/Q8/maze2-case1.png Graphic file (type png)
 <use ../figures/Q8/maze2-case1.png>
-Package pdftex.def Info: ../figures/Q8/maze2-case1.png  used on input line 219.
+Package pdftex.def Info: ../figures/Q8/maze2-case1.png  used on input line 222.
 (pdftex.def)             Requested size: 142.26378pt x 144.0743pt.
 <../figures/Q8/maze2-case2.png, id=105, 232.87pt x 237.88875pt>
 File: ../figures/Q8/maze2-case2.png Graphic file (type png)
 <use ../figures/Q8/maze2-case2.png>
-Package pdftex.def Info: ../figures/Q8/maze2-case2.png  used on input line 226.
+Package pdftex.def Info: ../figures/Q8/maze2-case2.png  used on input line 229.
 (pdftex.def)             Requested size: 142.26378pt x 145.33333pt.
 <../figures/Q8/maze1-case1-state1.png, id=106, 232.87pt x 235.88126pt>
 File: ../figures/Q8/maze1-case1-state1.png Graphic file (type png)
 <use ../figures/Q8/maze1-case1-state1.png>
-Package pdftex.def Info: ../figures/Q8/maze1-case1-state1.png  used on input line 242.
+Package pdftex.def Info: ../figures/Q8/maze1-case1-state1.png  used on input line 245.
 (pdftex.def)             Requested size: 79.6678pt x 80.69525pt.
 File: ../figures/Q8/maze1-case1-state1.png Graphic file (type png)
 <use ../figures/Q8/maze1-case1-state1.png>
-Package pdftex.def Info: ../figures/Q8/maze1-case1-state1.png  used on input line 250.
+Package pdftex.def Info: ../figures/Q8/maze1-case1-state1.png  used on input line 253.
 (pdftex.def)             Requested size: 79.6678pt x 80.69525pt.
 <../figures/Q8/maze1-case1-state2.png, id=107, 233.87375pt x 235.88126pt>
 File: ../figures/Q8/maze1-case1-state2.png Graphic file (type png)
 <use ../figures/Q8/maze1-case1-state2.png>
-Package pdftex.def Info: ../figures/Q8/maze1-case1-state2.png  used on input line 262.
+Package pdftex.def Info: ../figures/Q8/maze1-case1-state2.png  used on input line 265.
 (pdftex.def)             Requested size: 79.6678pt x 80.35333pt.
 <../figures/Q8/maze1-case1-state3.png, id=108, 232.87pt x 236.885pt>
 File: ../figures/Q8/maze1-case1-state3.png Graphic file (type png)
 <use ../figures/Q8/maze1-case1-state3.png>
-Package pdftex.def Info: ../figures/Q8/maze1-case1-state3.png  used on input line 274.
+Package pdftex.def Info: ../figures/Q8/maze1-case1-state3.png  used on input line 277.
 (pdftex.def)             Requested size: 79.6678pt x 81.03864pt.
  [3 <../figures/Q8/maze2-maze.png> <../figures/Q8/maze2-case1.png> <../figures/Q8/maze2-case2.png>]
 <../figures/Q8/maze1-case2-state1.png, id=119, 232.87pt x 239.89626pt>
 File: ../figures/Q8/maze1-case2-state1.png Graphic file (type png)
 <use ../figures/Q8/maze1-case2-state1.png>
-Package pdftex.def Info: ../figures/Q8/maze1-case2-state1.png  used on input line 292.
+Package pdftex.def Info: ../figures/Q8/maze1-case2-state1.png  used on input line 295.
 (pdftex.def)             Requested size: 79.6678pt x 82.06879pt.
 File: ../figures/Q8/maze1-case2-state1.png Graphic file (type png)
 <use ../figures/Q8/maze1-case2-state1.png>
-Package pdftex.def Info: ../figures/Q8/maze1-case2-state1.png  used on input line 300.
+Package pdftex.def Info: ../figures/Q8/maze1-case2-state1.png  used on input line 303.
 (pdftex.def)             Requested size: 79.6678pt x 82.06879pt.
 <../figures/Q8/maze1-case2-state2.png, id=120, 232.87pt x 238.8925pt>
 File: ../figures/Q8/maze1-case2-state2.png Graphic file (type png)
 <use ../figures/Q8/maze1-case2-state2.png>
-Package pdftex.def Info: ../figures/Q8/maze1-case2-state2.png  used on input line 313.
+Package pdftex.def Info: ../figures/Q8/maze1-case2-state2.png  used on input line 316.
 (pdftex.def)             Requested size: 79.6678pt x 81.7254pt.
 <../figures/Q8/maze1-case2-state3.png, id=121, 235.88126pt x 238.8925pt>
 File: ../figures/Q8/maze1-case2-state3.png Graphic file (type png)
 <use ../figures/Q8/maze1-case2-state3.png>
-Package pdftex.def Info: ../figures/Q8/maze1-case2-state3.png  used on input line 325.
+Package pdftex.def Info: ../figures/Q8/maze1-case2-state3.png  used on input line 328.
 (pdftex.def)             Requested size: 79.6678pt x 80.68652pt.
 <../figures/Q8/maze2-case1-state1.png, id=122, 239.89626pt x 235.88126pt>
 File: ../figures/Q8/maze2-case1-state1.png Graphic file (type png)
 <use ../figures/Q8/maze2-case1-state1.png>
-Package pdftex.def Info: ../figures/Q8/maze2-case1-state1.png  used on input line 343.
+Package pdftex.def Info: ../figures/Q8/maze2-case1-state1.png  used on input line 346.
 (pdftex.def)             Requested size: 79.6678pt x 78.33415pt.
 File: ../figures/Q8/maze2-case1-state1.png Graphic file (type png)
 <use ../figures/Q8/maze2-case1-state1.png>
-Package pdftex.def Info: ../figures/Q8/maze2-case1-state1.png  used on input line 351.
+Package pdftex.def Info: ../figures/Q8/maze2-case1-state1.png  used on input line 354.
 (pdftex.def)             Requested size: 79.6678pt x 78.33415pt.
 <../figures/Q8/maze2-case1-state2.png, id=123, 234.8775pt x 237.88875pt>
 File: ../figures/Q8/maze2-case1-state2.png Graphic file (type png)
 <use ../figures/Q8/maze2-case1-state2.png>
-Package pdftex.def Info: ../figures/Q8/maze2-case1-state2.png  used on input line 363.
+Package pdftex.def Info: ../figures/Q8/maze2-case1-state2.png  used on input line 366.
 (pdftex.def)             Requested size: 79.6678pt x 80.6887pt.
 <../figures/Q8/maze2-case1-state3.png, id=124, 232.87pt x 234.8775pt>
 File: ../figures/Q8/maze2-case1-state3.png Graphic file (type png)
 <use ../figures/Q8/maze2-case1-state3.png>
-Package pdftex.def Info: ../figures/Q8/maze2-case1-state3.png  used on input line 375.
+Package pdftex.def Info: ../figures/Q8/maze2-case1-state3.png  used on input line 378.
 (pdftex.def)             Requested size: 79.6678pt x 80.35187pt.
 <../figures/Q8/maze2-case2-state1.png, id=125, 235.88126pt x 236.885pt>
 File: ../figures/Q8/maze2-case2-state1.png Graphic file (type png)
 <use ../figures/Q8/maze2-case2-state1.png>
-Package pdftex.def Info: ../figures/Q8/maze2-case2-state1.png  used on input line 393.
+Package pdftex.def Info: ../figures/Q8/maze2-case2-state1.png  used on input line 396.
 (pdftex.def)             Requested size: 79.6678pt x 80.00848pt.
 File: ../figures/Q8/maze2-case2-state1.png Graphic file (type png)
 <use ../figures/Q8/maze2-case2-state1.png>
-Package pdftex.def Info: ../figures/Q8/maze2-case2-state1.png  used on input line 401.
+Package pdftex.def Info: ../figures/Q8/maze2-case2-state1.png  used on input line 404.
 (pdftex.def)             Requested size: 79.6678pt x 80.00848pt.
 <../figures/Q8/maze2-case2-state2.png, id=126, 234.8775pt x 233.87375pt>
 File: ../figures/Q8/maze2-case2-state2.png Graphic file (type png)
 <use ../figures/Q8/maze2-case2-state2.png>
-Package pdftex.def Info: ../figures/Q8/maze2-case2-state2.png  used on input line 413.
+Package pdftex.def Info: ../figures/Q8/maze2-case2-state2.png  used on input line 416.
 (pdftex.def)             Requested size: 79.6678pt x 79.32687pt.
 <../figures/Q8/maze2-case2-state3.png, id=127, 237.88875pt x 236.885pt>
 File: ../figures/Q8/maze2-case2-state3.png Graphic file (type png)
 <use ../figures/Q8/maze2-case2-state3.png>
-Package pdftex.def Info: ../figures/Q8/maze2-case2-state3.png  used on input line 425.
+Package pdftex.def Info: ../figures/Q8/maze2-case2-state3.png  used on input line 428.
 (pdftex.def)             Requested size: 79.6678pt x 79.33257pt.
- [4 <../figures/Q8/maze1-case1-state1.png> <../figures/Q8/maze1-case1-state2.png> <../figures/Q8/maze1-case1-state3.png> <../figures/Q8/maze1-case2-state1.png> <../figures/Q8/maze1-case2-state2.png> <../figures/Q8/maze1-case2-state3.png> <../figures/Q8/maze2-case1-state1.png> <../figures/Q8/maze2-case1-state2.png> <../figures/Q8/maze2-case1-state3.png> <../figures/Q8/maze2-case2-state1.png> <../figures/Q8/maze2-case2-state2.png> <../figures/Q8/maze2-case2-state3.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 479.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 479.
+ [4 <../figures/Q8/maze1-case1-state1.png> <../figures/Q8/maze1-case1-state2.png> <../figures/Q8/maze1-case1-state3.png> <../figures/Q8/maze1-case2-state1.png> <../figures/Q8/maze1-case2-state2.png> <../figures/Q8/maze1-case2-state3.png> <../figures/Q8/maze2-case1-state1.png> <../figures/Q8/maze2-case1-state2.png> <../figures/Q8/maze2-case1-state3.png> <../figures/Q8/maze2-case2-state1.png> <../figures/Q8/maze2-case2-state2.png> <../figures/Q8/maze2-case2-state3.png>] [5]
+<../figures/Q9/mnist/0.png, id=155, 433.62pt x 289.08pt>
+File: ../figures/Q9/mnist/0.png Graphic file (type png)
+<use ../figures/Q9/mnist/0.png>
+Package pdftex.def Info: ../figures/Q9/mnist/0.png  used on input line 466.
+(pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
+<../figures/Q9/mnist/1000.png, id=156, 433.62pt x 289.08pt>
+File: ../figures/Q9/mnist/1000.png Graphic file (type png)
+<use ../figures/Q9/mnist/1000.png>
+Package pdftex.def Info: ../figures/Q9/mnist/1000.png  used on input line 474.
+(pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
+<../figures/Q9/mnist/10000.png, id=157, 433.62pt x 289.08pt>
+File: ../figures/Q9/mnist/10000.png Graphic file (type png)
+<use ../figures/Q9/mnist/10000.png>
+Package pdftex.def Info: ../figures/Q9/mnist/10000.png  used on input line 482.
+(pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
+<../figures/Q9/mnist/20000.png, id=158, 433.62pt x 289.08pt>
+File: ../figures/Q9/mnist/20000.png Graphic file (type png)
+<use ../figures/Q9/mnist/20000.png>
+Package pdftex.def Info: ../figures/Q9/mnist/20000.png  used on input line 490.
+(pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
+<../figures/Q9/mnist/29000.png, id=159, 433.62pt x 289.08pt>
+File: ../figures/Q9/mnist/29000.png Graphic file (type png)
+<use ../figures/Q9/mnist/29000.png>
+Package pdftex.def Info: ../figures/Q9/mnist/29000.png  used on input line 498.
+(pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
+<../figures/Q9/fashion_mnist/0.png, id=160, 433.62pt x 289.08pt>
+File: ../figures/Q9/fashion_mnist/0.png Graphic file (type png)
+<use ../figures/Q9/fashion_mnist/0.png>
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/0.png  used on input line 519.
+(pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
+<../figures/Q9/fashion_mnist/1000.png, id=161, 433.62pt x 289.08pt>
+File: ../figures/Q9/fashion_mnist/1000.png Graphic file (type png)
+<use ../figures/Q9/fashion_mnist/1000.png>
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/1000.png  used on input line 527.
+(pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
+<../figures/Q9/fashion_mnist/10000.png, id=162, 433.62pt x 289.08pt>
+File: ../figures/Q9/fashion_mnist/10000.png Graphic file (type png)
+<use ../figures/Q9/fashion_mnist/10000.png>
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/10000.png  used on input line 535.
+(pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
+<../figures/Q9/fashion_mnist/20000.png, id=163, 433.62pt x 289.08pt>
+File: ../figures/Q9/fashion_mnist/20000.png Graphic file (type png)
+<use ../figures/Q9/fashion_mnist/20000.png>
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/20000.png  used on input line 543.
+(pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
+<../figures/Q9/fashion_mnist/29000.png, id=164, 433.62pt x 289.08pt>
+File: ../figures/Q9/fashion_mnist/29000.png Graphic file (type png)
+<use ../figures/Q9/fashion_mnist/29000.png>
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/29000.png  used on input line 551.
+(pdftex.def)             Requested size: 142.26378pt x 94.8409pt.
+ [6 <../figures/Q9/mnist/0.png> <../figures/Q9/mnist/1000.png> <../figures/Q9/mnist/10000.png> <../figures/Q9/mnist/20000.png> <../figures/Q9/mnist/29000.png> <../figures/Q9/fashion_mnist/0.png> <../figures/Q9/fashion_mnist/1000.png> <../figures/Q9/fashion_mnist/10000.png> <../figures/Q9/fashion_mnist/20000.png> <../figures/Q9/fashion_mnist/29000.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 581.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 581.
  (./efc4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 479.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 479.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 581.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 581.
 Package rerunfilecheck Info: File `efc4.out' has not changed.
-(rerunfilecheck)             Checksum: B6E50F877D58AEC733044CD0A13D58DD;1146.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 479.
+(rerunfilecheck)             Checksum: 3BE1E6A5C7541233BA21637AC37EDF01;1130.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 581.
  ) 
 Here is how much of TeX's memory you used:
- 10381 strings out of 480478
- 157972 string characters out of 5905960
- 459450 words of memory out of 5000000
- 26207 multiletter control sequences out of 15000+600000
+ 10464 strings out of 480478
+ 160254 string characters out of 5905960
+ 460458 words of memory out of 5000000
+ 26283 multiletter control sequences out of 15000+600000
  539856 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,12n,47p,371b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on efc4.pdf (5 pages, 170756 bytes).
+Output written on efc4.pdf (7 pages, 640891 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 227 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 287 words of extra memory for PDF output out of 10000 (max. 10000000)
 
