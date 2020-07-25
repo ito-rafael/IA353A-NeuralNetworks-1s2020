@@ -264,6 +264,12 @@ INPUT ../figures/Q9/fashion_mnist/20000.png
 INPUT ../figures/Q9/fashion_mnist/29000.png
 INPUT ../figures/Q9/fashion_mnist/29000.png
 INPUT ../figures/Q9/fashion_mnist/29000.png
+INPUT ../figures/Q10/tsne1.png
+INPUT ../figures/Q10/tsne1.png
+INPUT ../figures/Q10/tsne1.png
+INPUT ../figures/Q10/tsne2.png
+INPUT ../figures/Q10/tsne2.png
+INPUT ../figures/Q10/tsne2.png
 INPUT efc4.aux
 INPUT ./efc4.out
 INPUT ./efc4.out
