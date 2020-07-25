@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.8)  23 JUL 2020 07:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.8)  25 JUL 2020 08:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,22 +337,22 @@ File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count282
 \l__pdf_internal_box=\box53
 ) (./efc4.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count283
@@ -378,7 +378,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 59.
+Package hyperref Info: Link coloring OFF on input line 60.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -388,9 +388,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count289
 )
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
  (./efc4.out) (./efc4.out)
 \@outlinefile=\write3
 
@@ -429,44 +429,44 @@ LaTeX Info: Redefining \nameref on input line 59.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 59.
+LaTeX Info: Redefining \selectfont on input line 60.
 \c@lstlisting=\count290
 <../figures/unicamp.png, id=48, 481.8pt x 481.8pt>
 File: ../figures/unicamp.png Graphic file (type png)
 <use ../figures/unicamp.png>
-Package pdftex.def Info: ../figures/unicamp.png  used on input line 66.
+Package pdftex.def Info: ../figures/unicamp.png  used on input line 67.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
 <../figures/feec.jpg, id=50, 863.225pt x 357.335pt>
 File: ../figures/feec.jpg Graphic file (type jpg)
 <use ../figures/feec.jpg>
-Package pdftex.def Info: ../figures/feec.jpg  used on input line 73.
+Package pdftex.def Info: ../figures/feec.jpg  used on input line 74.
 (pdftex.def)             Requested size: 42.67912pt x 17.66605pt.
  [1
 
-{/home/rafael/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../figures/unicamp.png> <../figures/feec.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
- [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
+{/home/rafael/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../figures/unicamp.png> <../figures/feec.jpg>] [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
  (./efc4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
 Package rerunfilecheck Info: File `efc4.out' has not changed.
 (rerunfilecheck)             Checksum: 134E7D32410A6E56C316B5E5CF761066;690.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 225.
  ) 
 Here is how much of TeX's memory you used:
- 10162 strings out of 480478
- 152423 string characters out of 5905960
- 442405 words of memory out of 5000000
- 26015 multiletter control sequences out of 15000+600000
+ 10173 strings out of 480478
+ 152589 string characters out of 5905960
+ 457564 words of memory out of 5000000
+ 26023 multiletter control sequences out of 15000+600000
  537413 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,8n,47p,303b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,9n,47p,303b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on efc4.pdf (2 pages, 85066 bytes).
+Output written on efc4.pdf (3 pages, 102604 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

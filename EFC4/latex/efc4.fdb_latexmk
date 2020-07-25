@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1595500276 "efc4.tex" "efc4.pdf" "efc4" 1595500277
+["pdflatex"] 1595675678 "efc4.tex" "efc4.pdf" "efc4" 1595675679
   "../figures/feec.jpg" 1574616926 23748 70e97f73b303fb0bb3a46c140ac489a1 ""
   "../figures/unicamp.png" 1574616926 20799 22e8b217252e731615341a48a090e52d ""
   "/home/rafael/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1576676982 334320 d10c2901904b0a572e57c10ac4826b67 ""
@@ -87,11 +87,11 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1591545468 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1594246621 2514048 e5f8fc97bbbd16fd18a98bf6f58f411b ""
-  "efc4.aux" 1595500277 2080 4955de1bdb675f3182efac46c856267a "pdflatex"
-  "efc4.out" 1595500277 690 134e7d32410a6e56c316b5e5cf761066 "pdflatex"
-  "efc4.tex" 1595500274 4018 ec8b65b698de7ab94f78ce4870105c9a ""
+  "efc4.aux" 1595675678 2662 4ca1b32987c25ca1a8b2346617d885fb "pdflatex"
+  "efc4.out" 1595675678 690 134e7d32410a6e56c316b5e5cf761066 "pdflatex"
+  "efc4.tex" 1595675678 7281 dbd830f9cdeafcf33712a7f7cfc08d8e ""
   (generated)
-  "efc4.out"
   "efc4.log"
-  "efc4.pdf"
+  "efc4.out"
   "efc4.aux"
+  "efc4.pdf"
