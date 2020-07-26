@@ -184,8 +184,8 @@ INPUT ../figures/Q8/maze2-case1.png
 INPUT ../figures/Q8/maze2-case2.png
 INPUT ../figures/Q8/maze2-case2.png
 INPUT ../figures/Q8/maze2-case2.png
-INPUT ../figures/Q8/maze1-case1-state1.png
-INPUT ../figures/Q8/maze1-case1-state1.png
+INPUT ../figures/Q8/maze1-case1.png
+INPUT ../figures/Q8/maze1-case1.png
 INPUT ../figures/Q8/maze1-case1-state1.png
 INPUT ../figures/Q8/maze1-case1-state1.png
 INPUT ../figures/Q8/maze1-case1-state1.png
@@ -201,8 +201,8 @@ INPUT ../figures/Q8/maze1-case1-state2.png
 INPUT ../figures/Q8/maze1-case1-state3.png
 INPUT ../figures/Q8/maze1-case1-state3.png
 INPUT ../figures/Q8/maze1-case1-state3.png
-INPUT ../figures/Q8/maze1-case2-state1.png
-INPUT ../figures/Q8/maze1-case2-state1.png
+INPUT ../figures/Q8/maze1-case2.png
+INPUT ../figures/Q8/maze1-case2.png
 INPUT ../figures/Q8/maze1-case2-state1.png
 INPUT ../figures/Q8/maze1-case2-state1.png
 INPUT ../figures/Q8/maze1-case2-state1.png
@@ -212,8 +212,8 @@ INPUT ../figures/Q8/maze1-case2-state2.png
 INPUT ../figures/Q8/maze1-case2-state3.png
 INPUT ../figures/Q8/maze1-case2-state3.png
 INPUT ../figures/Q8/maze1-case2-state3.png
-INPUT ../figures/Q8/maze2-case1-state1.png
-INPUT ../figures/Q8/maze2-case1-state1.png
+INPUT ../figures/Q8/maze2-case1.png
+INPUT ../figures/Q8/maze2-case1.png
 INPUT ../figures/Q8/maze2-case1-state1.png
 INPUT ../figures/Q8/maze2-case1-state1.png
 INPUT ../figures/Q8/maze2-case1-state1.png
@@ -223,8 +223,8 @@ INPUT ../figures/Q8/maze2-case1-state2.png
 INPUT ../figures/Q8/maze2-case1-state3.png
 INPUT ../figures/Q8/maze2-case1-state3.png
 INPUT ../figures/Q8/maze2-case1-state3.png
-INPUT ../figures/Q8/maze2-case2-state1.png
-INPUT ../figures/Q8/maze2-case2-state1.png
+INPUT ../figures/Q8/maze2-case2.png
+INPUT ../figures/Q8/maze2-case2.png
 INPUT ../figures/Q8/maze2-case2-state1.png
 INPUT ../figures/Q8/maze2-case2-state1.png
 INPUT ../figures/Q8/maze2-case2-state1.png

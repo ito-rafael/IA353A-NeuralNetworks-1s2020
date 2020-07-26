@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1595719947 "efc4.tex" "efc4.pdf" "efc4" 1595719948
+["pdflatex"] 1595755476 "efc4.tex" "efc4.pdf" "efc4" 1595755477
   "../figures/Q10/tsne1.png" 1595660918 31612 c742b0f084ab1d1e40d7b4dbb3525677 ""
   "../figures/Q10/tsne2.png" 1595660918 37096 8bc2ad9f89188e77a26deb5855a66aa6 ""
   "../figures/Q8/maze1-case1-state1.png" 1595692675 8820 f02fdfa5e2cd7dc7dc68a63d91742959 ""
@@ -129,11 +129,11 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1591545468 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1594246621 2514048 e5f8fc97bbbd16fd18a98bf6f58f411b ""
-  "efc4.aux" 1595719948 15562 c601dbb0c3b39f43998e1a6892e32a86 "pdflatex"
-  "efc4.out" 1595719948 1130 3be1e6a5c7541233ba21637ac37edf01 "pdflatex"
-  "efc4.tex" 1595719946 19133 3c488645a6cc67ee121d6cadbc2dd5a6 ""
+  "efc4.aux" 1595755477 15562 c601dbb0c3b39f43998e1a6892e32a86 "pdflatex"
+  "efc4.out" 1595755477 1130 3be1e6a5c7541233ba21637ac37edf01 "pdflatex"
+  "efc4.tex" 1595755476 19105 39c5ebe5c0dbe81e00e2816884db0af9 ""
   (generated)
+  "efc4.log"
   "efc4.aux"
   "efc4.out"
   "efc4.pdf"
-  "efc4.log"
