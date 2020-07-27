@@ -4,6 +4,7 @@
 % preamble
 %-----------------------------
 \usepackage[sumlimits,]{amsmath}    % math equations and formulas
+\usepackage{amsfonts}
 \usepackage[utf8]{inputenc}         % use UTF-8 encoding
 \usepackage[english]{babel}         % use English language
 \usepackage{graphicx}              % insert images
@@ -443,9 +444,69 @@
 \subsection{RMS during the training}
 %-------------------------------------------------
 
+\paragraph{Explique como é definida a função de erro quadrático médio usada no treinamento.}
+
+\paragraph{Inicialmente, devemos relembrar a equação de Bellman. Queremos achar a função Q-valor ótima, $Q^*$, que satisfaça a seguinte equação:}
+
+\begin{align*}
+    Q^*(s,a) = \mathbb{E}_{s'\sim \mathcal{E}}\left[r+\gamma\max_{a'}Q^*(s',a')|s,a\right]
+\end{align*} 
+
+\paragraph{A política ótima $\pi^*$ é dada se tomarmos a melhor ação de acordo com os valores da função $Q^*$.}
+
+\paragraph{Para resolver a equação anterior, temos um algoritmo iterativo dado por:}
+
+\begin{align*}
+    Q_{i+1}(s,a) = \mathbb{E}_{s'\sim \mathcal{E}}\left[r+\gamma\max_{a'}Q^*(s',a')|s,a\right]
+\end{align*} 
+
+\paragraph{Quando $i$ tende a infinito, temos que $Q_i$ tende a $Q^*$.}
+\paragraph{Entretanto, essa abordagem não é escalável. Assim o que se faz é usar uma rede neural para aprender e estimar a função Q-valor, sintetizando portanto, um mapeamento entre os estados e os q-valores.}
+
+\paragraph{Faremos então:}
+\begin{align*}
+    Q(s,a;\theta) \approx Q^*(s,a)
+\end{align*} 
+
+\paragraph{Onde $\theta$ representa os parâmetros do modelo (pesos da rede neural).}
+
+\paragraph{Assim, tomando $y_i$ como a saída da rede neural e $L_i(\theta_i)$ a função de perda usada durante seu treinamento, podemos retomar a equação de Bellman aproximando o lado direito com o lado esquerdo:}
+
+\begin{align*}
+    y_i = \mathbb{E}_{s'\sim \mathcal{E}}\left[r+\gamma\max_{a'}Q^*(s',a';\theta_{i-1})|s,a\right]
+\end{align*} 
+\begin{align*}
+    L_i(\theta_i) = \mathbb{E}_{s,a\sim\rho}\left[(y_i - Q(s,a;\theta_i))^2\right]
+\end{align*} 
+
+\paragraph{E é justamente assim que é definida a função de erro quadrático médio usado no treinamento. Procura-se um mapeamento entre os estados, usado como entrada da rede neural (neste caso é o panorama do labirinto), e a a função Q-valor ótima. Ao minizarmos o erro quadrático médio entre a saída da rede e função Q-valor parametrizada por theta, estamos na verdade forçando que o lado esquerdo da equação de Bellman seja igual ao lado direito. Conforme o agente se movimenta e explora o ambiente, atua-se no vetor de pesos através de técnicas de gradiente, e com isso chegamos em um mapeamento onde a saída da rede neural representa a função Q-valor ótima aproximada.}
+
+\paragraph{Para finalizar, usando como gancho para a resposta do próximo item, temos que a entrada da rede (inputs) o estado do ambiente e a saída da rede (targets) calculada como a recompensa dada pela ação tomada anteriormente mais o fator de desconto (gamma) multiplicado pelo máximo de $Q(s',a')$ (que representa o máximo da saída do próximo estado, ou apenas a recompensa em caso de game over).}
+
+\newpage
 %-------------------------------------------------
 \subsection{Experience replay}
 %-------------------------------------------------
+
+\paragraph{Explique como é trabalhada a técnica de experience replay.}
+
+\paragraph{Para se trabalhar com a técnica de experience replay, é proposta uma classe denominada Experience. Nesta classe temos o ``construtor" da classe \_\_init\_\_ (magic method, ou ainda ``dunder``) e três métodos: remember, predict e get\_data.}
+
+\paragraph{A principal ideia aqui é usar uma memória para armazenar episódios. Um episódio é composto de uma lista com cinco elementos:}
+\begin{itemize}
+    \item envstate: estado do ambiente contendo os valores de todas células do labirinto (em um array 1D).
+    \item action: uma das quatro ações que o agente (rato) pode tomar (cima, baixo, direita ou esquerda).
+    \item reward: recompensa recebida pela ação tomada.
+    \item envstate\_next: novo estado do ambiente após a ação do agente.
+    \item game\_over: valor booleano que indica se houve game over (win ou lose).
+\end{itemize}
+
+\paragraph{Assim, para cada movimento do rato, temos um episódio que podemos inserir em uma memória. Conforme essa memória vai se enchendo, defini-se um limite para deletar episódios mais antigos armazenados. Neste caso em específico, adotou-se uma memória de tamanho padrão 1000, mas definindo-a como 8 vezes o tamanho do labirinto na chamada do treinamento da rede neural.}
+
+\paragraph{O método remember é chamado após cada movimento do agente, sendo sua função armazenar as informações daquele episódio na memória. O método get\_data é usado para pegar da memória a entrada (inputs) e saída (targets) que será usado no treinamento da rede neural, sendo que o número de amostras retornado por get\_data é definido como o mínimo entre o tamanho da memória e 50 (data\_size). E é esse processo que caracteriza a técnica experience replay, armazenando experiências recentes do agente (com a premissa de quanto mais ele se movimenta no ambiente, melhor vai ficando a predição da rede neural e portanto seus próximos movimentos) e usando dessas experiências para o treinamento, dado que a solução do problema trata-se de um processo iterativo.}
+
+\paragraph{Inicialmente, a saída da rede neural produzirá resultados aleatórios, mas conforme o treinamento for avançando e os parâmetros ajustados adequadamente, sua saída vai convergindo para a solução da equação de Bellman.}
+
 
 \newpage
 %=================================================
