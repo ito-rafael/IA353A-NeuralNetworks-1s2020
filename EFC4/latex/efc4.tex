@@ -650,7 +650,7 @@
 \subsection{word2vec}
 %------------------------
 
-\paragraph{O word2vec, proposto por \href{https://github.com/ito-rafael/machine-learning/blob/master/papers/NLP/2013\%20-\%20\%5Bword2vec\%5D\%20Efficient\%20Estimation\%20of\%20Word\%20Representations\%20in\%20Vector\%20Space\%20\%5BGoogle\%20Inc\%5D.pdf}{(Mikolov et al., 2013)} é uma ferramenta que fornece uma implementação eficiente das arquiteturas CBOW (continuous bag-of-words) e skip-gram para computar representação de vetores de palavras. Um resumo de uma página deste artigo feito por mim pode ser encontrado no seguinte \href{https://github.com/ito-rafael/machine-learning/blob/master/one-page\%20papers\%20summary/2013\%20-\%20\%5Bword2vec\%5D\%20Efficient\%20Estimation\%20of\%20Word\%20Representations\%20in\%20Vector\%20Space\%20\%5BGoogle\%20Inc\%5D.pdf}{link}. O código do wordvec está disponível em \href{https://code.google.com/archive/p/word2vec/}{https://code.google.com/archive/p/word2vec/}.}
+\paragraph{O word2vec, proposto por \href{https://github.com/ito-rafael/machine-learning/blob/master/papers/NLP/2013\%20-\%20\%5Bword2vec\%5D\%20Efficient\%20Estimation\%20of\%20Word\%20Representations\%20in\%20Vector\%20Space\%20\%5BGoogle\%20Inc\%5D.pdf}{(Mikolov et al., 2013)} é uma ferramenta que fornece uma implementação eficiente das arquiteturas CBOW (continuous bag-of-words), Figura \ref{fig:cbow}, e skip-gram, Figura \ref{fig:skip-gram}, para computar representação de vetores de palavras. Um resumo de uma página deste artigo feito por mim pode ser encontrado no seguinte \href{https://github.com/ito-rafael/machine-learning/blob/master/one-page\%20papers\%20summary/2013\%20-\%20\%5Bword2vec\%5D\%20Efficient\%20Estimation\%20of\%20Word\%20Representations\%20in\%20Vector\%20Space\%20\%5BGoogle\%20Inc\%5D.pdf}{link}. O código do wordvec está disponível em \href{https://code.google.com/archive/p/word2vec/}{https://code.google.com/archive/p/word2vec/}.}
 
 \graphicspath{{../figures/Q10/}}
 
@@ -684,14 +684,58 @@
 
 \paragraph{Esses vetores são denominados de word embeddings e são usados na grande maioria de arquiteturas SOTA (state-of-the-art). Por exemplo, na arquitetura BERT, usa-se três tipos de embeddings: embedding posicional, embedding de segmento e embedding de palavras.}
 
-\paragraph{Por fim, é interessante ressaltar as relações entre embeddings obtidas através de simples operações algébricas. Por exemplo, se considerarmos a relação entre embeddings de palavras de país e capital, temos a seguinte relação: Paris - France + Italy = Rome. Isto é, operando com os embeddings das palavras Paris, France e Italy, temos como resultado um vetor, sendo que a palavra mais próxima desse vetor resultante é o embedding da palavra Rome. Um outro exmplo clássico é a operação entres os vetores das palavra King - Man + Woman. O embedding mais próximo deste resultado é o da palavra Queen.}
+\paragraph{Por fim, é interessante ressaltar as relações entre embeddings obtidas através de simples operações algébricas. Por exemplo, se considerarmos a relação entre embeddings de palavras de país e capital, temos a seguinte relação: Paris - France + Italy = Rome. Isto é, operando com os embeddings das palavras Paris, France e Italy, temos como resultado um vetor, sendo que a palavra mais próxima desse vetor resultante é o embedding da palavra Rome. Um outro exemplo clássico é a operação entres os vetores das palavra King - Man + Woman. O embedding mais próximo deste resultado é o da palavra Queen.}
 
-\paragraph{Um outro projeto semelhante é o GloVe, proposto em \href{https://github.com/ito-rafael/machine-learning/blob/master/papers/NLP/2014\%20-\%20\%5BGloVe\%5D\%20GloVe:\%20Global\%20Vectors\%20for\%20Word\%20Representation\%20\%5BStanford\%20University\%5D\%20(Pennington\%20et\%20al.\%2C\%202014).pdf}{(Pennington et al., 2014)}, que também propõe vetores para representação de palavras. Um exemplo interessante pode ser encontrado na \href{https://nlp.stanford.edu/projects/glove/}{página inicial do projeto}, onde é mostrado que as palavras cujos embedding são mais próximos do embedding da palavra frog são: frogs, toad, litoria, leptodactylidae, rana, 
-lizard e eleutherodactylus.}
+\paragraph{Um outro projeto semelhante é o GloVe, proposto em \href{https://github.com/ito-rafael/machine-learning/blob/master/papers/NLP/2014\%20-\%20\%5BGloVe\%5D\%20GloVe:\%20Global\%20Vectors\%20for\%20Word\%20Representation\%20\%5BStanford\%20University\%5D\%20(Pennington\%20et\%20al.\%2C\%202014).pdf}{(Pennington et al., 2014)}, que também propõe vetores para representação de palavras. Um exemplo interessante pode ser encontrado na \href{https://nlp.stanford.edu/projects/glove/}{página inicial do projeto} e também mostrado na Figura \ref{fig:glove}, onde é mostrado que as palavras cujos embedding mais próximos do embedding da palavra frog são: frogs, toad, litoria, leptodactylidae, rana, lizard e eleutherodactylus.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{GloVe}
+    \caption{Embeddings vizinhos ao embedding da palavra ``frog"}
+    \label{fig:glove}
+\end{figure}
 
 %------------------------
 \subsection{t-SNE}
 %------------------------
+
+
+\paragraph{A técnica t-distributed Stochastic Neighbor Embedding, ou apenas t-SNE, proposta em \href{https://github.com/ito-rafael/machine-learning/blob/master/papers/visualization/2008\%20-\%20\%5Bt-SNE\%5D\%20Visualizing\%20Data\%20using\%20t-SNE\%20\%5BUniversity\%20of\%20Toronto\%5D\%20(Maaten\%20\%26\%20Hinton\%2C\%202008).pdf}{(Maaten \& Hinton, 2008)} teve como autor Laurens Maaten sob orientação de um dos maiores nomes na área de machine learning, Geoffrey Hinton, tendo como revisor do artigo Yoshua Bengio, também um dos maiores nomes da atualidade na área. Esta é uma técnica de aprendizado não-supervisionado e não-linear usada como redução de dimensionalidade (geralmente usada para visualizar dados em alta dimensão). Pontos similares nessa dimensão elevada são convertidos em probabilidades conjuntas e procura-se minimizar a divergência de Kullback-Leibler (KL) entre os dados de alta dimensão e as probabilidades conjunta dos embeddings de dimensão reduzida. Geralmente trabalha-se com dimensão 2 ou 3, por questões de interpretação visual.}
+
+\paragraph{Para calcular as probabilidades conjuntas, primeiro centra-se uma Gaussiana (tendo como hiperparâmetro uma variável denominada perplexidade) em cada ponto na dimensão original e elevada, mede-se a densidade de todos os pontos sob a distribuicão Gaussiana e porfim renormaliza-se os pontos. Isso nos dá um conjunto de probabilidades para todos os pontos, que chamaremos de $P_{ij}$. Em seguida, a mesma coisa é feita, porém usando uma distribuição Student t-distribution. Isso nos dá um segundo conjunto de probabilidades $Q_{ij}$ no espaço de dimensão reduzida. Finalmente, o último passo, conforme já citado anteriormente, consiste em minimizar a divergência de KL através de uma técnica de gradiente descendente.}
+
+\paragraph{Quando os dados estão em uma dimensão muito elevada, recomenda-se inicialmente reduzir a dimensão usando outra técnica (por exemplo PCA ou TruncatedSVD para uma dimensão 50), para em seguida aplicar t-SNE. Essa e outras dicas podem ser vista na própria página do autor do paper, Laurens, encontrada em \href{https://lvdmaaten.github.io/tsne/}{https://lvdmaaten.github.io/tsne/}. Um outro detalhe importante, é que função custo usada na implementação do t-SNE não é convexa, isso faz com que diferente resultados sejam obtidos com diferente inicializações.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{t-sne_mnist}
+    \caption{Exemplo da técnica t-SNE aplicada na base MNIST}
+    \label{fig:tsne-mnist}
+\end{figure}
+
+%------------------------
+\subsection{Results discussion}
+%------------------------
+
+\paragraph{Após o treinamento dado por 10 épocas, brincadeiras com palavras e o modelo treinado são feitas. Para isso utiliza-se a propriedade model.wv e diversos métodos.}
+
+\paragraph{Inicialmente procura-se a palavra mais similar a palavra ``dirty''. Embora nem todas palavras sejam sinônimas, podemos ver que são palavras relacionadas, todas indicando muito provavelmente uma avaliação negativa no dataset. Isto é, quando a palavra ``dirty'' aparece em uma avaliação, é bem possível que uma outra palavra semelhante, como por exemplo alguma dessas da lista, também apareça, indicando algo negativo.}
+
+\paragraph{Em seguida, procura-se as 6 (dada pelo parâmetro ``topn'') palavras mais similares à palavra ``polite'', chegando em: courteous, friendly, cordial, professional, attentive e curteous. Além das topn palavras mais similares também temos o cálculo da métrica usada, que é a similaridade de cosenos. Podemos ver que de fato temos palavras próximas.}
+
+\paragraph{Agora procura-se as 6 palavras mais similares à palavra ``france''. Aqui, temos como retorno as seguintes palavras: canada, germany, spain, hawaii, thailand e mexico. Podemos ver que todas palavras similares também corresponde a países, embora o valor da similaridade de cosenos tenha sido inferior ao caso anterior da palavra ``polite''. Podemos talvez ir até além, tentando fazer referências entre os países, como por exemplo o fato de o Canadá apresentar o francês como um dos idiomas oficiais. Alemanha e Espanha são países que fazem fronteiras com a França. Por fim, Havaí, Tailândia e México provavelmente aparecem na lista por serem países bastante representativos na base dados, dado que trata-se de avaliações de hotéis ao redor do globo (a Terra não é plana) e tais países são considerados turísticos.}
+
+\paragraph{O próximo exemplo é o de palavras similares à palavra ``shocked''. Novamente temos um padrão nas resposta obtidas, todas na classe de adjetivo e com a mesma terminação, indicando sensação de surpresa.}
+
+\paragraph{Neste próximo exemplo usa-se três palavras com contribuição positiva e uma palavra com contribuição negativa para a medida de similaridade. As palavras com contribuição positivas são bed, sheet e pillow, e a com contribuição negativa é couch. Devido ao fato de as três palavras com contribuição positiva serem itens de cama (cama, lençol e travesseiro), temos como saída também itens de cama: cobertor, edredon, colchão, fronha e colcha, ao mesmo tempo que não temos nenhum item relacionado a palavra sofá (ex: cushion e sofa).}
+
+\paragraph{O próximo item mede a similaridade entre as palavras ``dirty'' e ``smelly''. Embora sujo não seja exatamente um sinônimo de malcheiroso, temos uma medida de similaridade de cosenos relativamente alta de 0.75. Isso mostra que para o dataset em questão, essas palavras são próximas, no sentido de que é bastante plausível que ambas apareçam próximas em uma avaliação de hotel, dado que ambas são adjetivos negativos usados em uma avaliação.}
+
+\paragraph{Quatro palavras são usadas no próximo exemplo: bed, pillow, duvet e shower. Aqui, procura-se o item que não pertence ao conjunto. Claramente podemos ver que é a palavra chuveiro. Embora quase todo hotel tenha um chuveiro, todas outras palavras são itens de cama, o que indica que os embeddings das palavras cama, travesseiro e edredon estejam bem próximas, enquanto que o embedding da palavra chuveiro esteja mais distante das demais.}
+
+\paragraph{Os próximos dois itens apresentam as palavras em uma forma visual através de um gráfico 2D. Para isso trabalha-se com redução de dimensionalidade de 300 (dimensão dos embeddings) para 50 usando PCA, e em seguida reduz-se para dimensão 2 utilizando a técnica t-SNE. A função tsnescatterplot recebe como entrada três argumentos: modelo, uma palavra (query) e uma lista de palavras. A palavra query é mostrada em vermelho. As palavras mostradas em azul são as 10 palavras mais similares calculadas a partir da query. Por fim, as palavras da lista recebida como parâmetro da função são mostradas em verde.}
+
+\paragraph{O primeiro gráfico é o da Figura \ref{fig:tsne1}. Aqui a query é a palavra ``bed'' e a lista de palavras contém palavras não relacionadas com a query: futebol, pássaro, cachorro, leite, etc. Podemos ver que as palavras similares (mostradas em azul) à palavra cama, encontram-se relativamente próximas da palavra ``bed''. Já as palavras em verde, da lista aparentemente aleatória, encontram-se mais distantes da palavra query. Algumas exceções são visíveis, como por exemplo as palavras dog e grass, que podem ter ido parar aí devido a inicialização da técnica t-SNE, mas no geral, temos esse padrão citado anteriormente.}
 
 \begin{figure}[H]
     \centering
@@ -700,18 +744,14 @@ lizard e eleutherodactylus.}
     \label{fig:tsne1}
 \end{figure}
 
+\paragraph{Por fim, o último gráfico mostrado na Figura \ref{fig:tsne2} apresenta como query a palavra ``matress'' e recebe uma lista de 10 palavras, compreendendo as palavras entre a 10ª e 20ª mais similares a query. Dessa forma, o que temos é uma dispersão maior das palavras ao redor da query, mas ainda mantendo o padrão de as palavras azuis no geral estarem mais próximas. Uma observação importante é que query apresenta um erro de digitação (apresenta apenas um ``t'', sendo escrita como ``matress'' ao invés de ``mattress''), e curiosamente, tanto o plural correto (mattresses) quanto o plural escrito de forma equivocada (matresses) aparecem entre as palavras mais similares, indicando que essas palavras encontram-se no vocabulário do dataset e que são usadas em contextos semelhantes.}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=10cm]{tsne2}
     \caption{T-SNE 2}
     \label{fig:tsne2}
 \end{figure}
-
-%------------------------
-\subsection{Results discussion}
-%------------------------
-
-
 
 %=================================================
 
