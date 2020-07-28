@@ -1,5 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1595847412 "efc4.tex" "efc4.pdf" "efc4" 1595847414
+["pdflatex"] 1595928583 "efc4.tex" "efc4.pdf" "efc4" 1595928584
+  "../figures/Q10/CBOW.png" 1595926703 49639 1d1ba3f7e4912ac4a02dbcf44dad77e5 ""
+  "../figures/Q10/skip-gram.png" 1595926714 48911 e95d64c9175d2cef464184324936b3c3 ""
   "../figures/Q10/tsne1.png" 1595660918 31612 c742b0f084ab1d1e40d7b4dbb3525677 ""
   "../figures/Q10/tsne2.png" 1595660918 37096 8bc2ad9f89188e77a26deb5855a66aa6 ""
   "../figures/Q8/maze1-case1-state1.png" 1595692675 8820 f02fdfa5e2cd7dc7dc68a63d91742959 ""
@@ -150,11 +152,11 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1591545468 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1594246621 2514048 e5f8fc97bbbd16fd18a98bf6f58f411b ""
-  "efc4.aux" 1595847414 22074 0d49138b7f6a5cfba58618271cab5f5a "pdflatex"
-  "efc4.out" 1595847414 1130 3be1e6a5c7541233ba21637ac37edf01 "pdflatex"
-  "efc4.tex" 1595847410 25223 7f9eb00d3afbb7aa4245c451849d6f08 ""
+  "efc4.aux" 1595928584 26685 7127ce05589fe16b7bf051acb7fe8756 "pdflatex"
+  "efc4.out" 1595928584 1130 81ed1eef49bf2d97919711c142a0860a "pdflatex"
+  "efc4.tex" 1595928582 29279 4adcee57d6cef80b901dc468c6c812f0 ""
   (generated)
   "efc4.log"
-  "efc4.aux"
-  "efc4.pdf"
   "efc4.out"
+  "efc4.pdf"
+  "efc4.aux"

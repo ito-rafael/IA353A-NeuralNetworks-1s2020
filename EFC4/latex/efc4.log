@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.8)  27 JUL 2020 07:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.8)  28 JUL 2020 06:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -567,107 +567,113 @@ File: ../figures/Q8/maze2-case2-state3.png Graphic file (type png)
 <use ../figures/Q8/maze2-case2-state3.png>
 Package pdftex.def Info: ../figures/Q8/maze2-case2-state3.png  used on input line 431.
 (pdftex.def)             Requested size: 79.6678pt x 79.33257pt.
- [4 <../figures/Q8/maze1-case1-state1.png> <../figures/Q8/maze1-case1-state2.png> <../figures/Q8/maze1-case1-state3.png> <../figures/Q8/maze1-case2-state1.png> <../figures/Q8/maze1-case2-state2.png> <../figures/Q8/maze1-case2-state3.png> <../figures/Q8/maze2-case1-state1.png> <../figures/Q8/maze2-case1-state2.png> <../figures/Q8/maze2-case1-state3.png> <../figures/Q8/maze2-case2-state1.png> <../figures/Q8/maze2-case2-state2.png> <../figures/Q8/maze2-case2-state3.png>] [5]
-Overfull \hbox (2.17313pt too wide) in paragraph at lines 506--506
-\OT1/cmr/bx/n/10 mem^^Soria. Con-forme essa mem^^Soria vai se enchendo, defini-se um lim-ite para dele-tar epis^^Sodios
- []
-
-[6]
+ [4 <../figures/Q8/maze1-case1-state1.png> <../figures/Q8/maze1-case1-state2.png> <../figures/Q8/maze1-case1-state3.png> <../figures/Q8/maze1-case2-state1.png> <../figures/Q8/maze1-case2-state2.png> <../figures/Q8/maze1-case2-state3.png> <../figures/Q8/maze2-case1-state1.png> <../figures/Q8/maze2-case1-state2.png> <../figures/Q8/maze2-case1-state3.png> <../figures/Q8/maze2-case2-state1.png> <../figures/Q8/maze2-case2-state2.png> <../figures/Q8/maze2-case2-state3.png>] [5] [6]
 <../figures/Q9/mnist/0.png, id=185, 326.21875pt x 225.84375pt>
 File: ../figures/Q9/mnist/0.png Graphic file (type png)
 <use ../figures/Q9/mnist/0.png>
-Package pdftex.def Info: ../figures/Q9/mnist/0.png  used on input line 531.
+Package pdftex.def Info: ../figures/Q9/mnist/0.png  used on input line 530.
 (pdftex.def)             Requested size: 142.26378pt x 98.4928pt.
 <../figures/Q9/mnist/1000.png, id=186, 328.22626pt x 230.8625pt>
 File: ../figures/Q9/mnist/1000.png Graphic file (type png)
 <use ../figures/Q9/mnist/1000.png>
-Package pdftex.def Info: ../figures/Q9/mnist/1000.png  used on input line 539.
+Package pdftex.def Info: ../figures/Q9/mnist/1000.png  used on input line 538.
 (pdftex.def)             Requested size: 142.26378pt x 100.06505pt.
 <../figures/Q9/mnist/10000.png, id=187, 328.22626pt x 231.86626pt>
 File: ../figures/Q9/mnist/10000.png Graphic file (type png)
 <use ../figures/Q9/mnist/10000.png>
-Package pdftex.def Info: ../figures/Q9/mnist/10000.png  used on input line 547.
+Package pdftex.def Info: ../figures/Q9/mnist/10000.png  used on input line 546.
 (pdftex.def)             Requested size: 142.26378pt x 100.50012pt.
 <../figures/Q9/mnist/20000.png, id=188, 328.22626pt x 231.86626pt>
 File: ../figures/Q9/mnist/20000.png Graphic file (type png)
 <use ../figures/Q9/mnist/20000.png>
-Package pdftex.def Info: ../figures/Q9/mnist/20000.png  used on input line 555.
+Package pdftex.def Info: ../figures/Q9/mnist/20000.png  used on input line 554.
 (pdftex.def)             Requested size: 142.26378pt x 100.50012pt.
 <../figures/Q9/mnist/30000.png, id=189, 329.23pt x 230.8625pt>
 File: ../figures/Q9/mnist/30000.png Graphic file (type png)
 <use ../figures/Q9/mnist/30000.png>
-Package pdftex.def Info: ../figures/Q9/mnist/30000.png  used on input line 563.
+Package pdftex.def Info: ../figures/Q9/mnist/30000.png  used on input line 562.
 (pdftex.def)             Requested size: 142.26378pt x 99.75858pt.
 <../figures/Q9/mnist/50000.png, id=190, 327.2225pt x 228.855pt>
 File: ../figures/Q9/mnist/50000.png Graphic file (type png)
 <use ../figures/Q9/mnist/50000.png>
-Package pdftex.def Info: ../figures/Q9/mnist/50000.png  used on input line 571.
+Package pdftex.def Info: ../figures/Q9/mnist/50000.png  used on input line 570.
 (pdftex.def)             Requested size: 142.26378pt x 99.49524pt.
 <../figures/Q9/fashion_mnist/0.png, id=191, 328.22626pt x 227.85126pt>
 File: ../figures/Q9/fashion_mnist/0.png Graphic file (type png)
 <use ../figures/Q9/fashion_mnist/0.png>
-Package pdftex.def Info: ../figures/Q9/fashion_mnist/0.png  used on input line 592.
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/0.png  used on input line 591.
 (pdftex.def)             Requested size: 142.26378pt x 98.75986pt.
 <../figures/Q9/fashion_mnist/1000.png, id=192, 329.23pt x 230.8625pt>
 File: ../figures/Q9/fashion_mnist/1000.png Graphic file (type png)
 <use ../figures/Q9/fashion_mnist/1000.png>
-Package pdftex.def Info: ../figures/Q9/fashion_mnist/1000.png  used on input line 600.
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/1000.png  used on input line 599.
 (pdftex.def)             Requested size: 142.26378pt x 99.75858pt.
 <../figures/Q9/fashion_mnist/10000.png, id=193, 327.2225pt x 230.8625pt>
 File: ../figures/Q9/fashion_mnist/10000.png Graphic file (type png)
 <use ../figures/Q9/fashion_mnist/10000.png>
-Package pdftex.def Info: ../figures/Q9/fashion_mnist/10000.png  used on input line 608.
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/10000.png  used on input line 607.
 (pdftex.def)             Requested size: 142.26378pt x 100.368pt.
 <../figures/Q9/fashion_mnist/20000.png, id=194, 325.215pt x 227.85126pt>
 File: ../figures/Q9/fashion_mnist/20000.png Graphic file (type png)
 <use ../figures/Q9/fashion_mnist/20000.png>
-Package pdftex.def Info: ../figures/Q9/fashion_mnist/20000.png  used on input line 616.
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/20000.png  used on input line 615.
 (pdftex.def)             Requested size: 142.26378pt x 99.67424pt.
 <../figures/Q9/fashion_mnist/30000.png, id=195, 327.2225pt x 230.8625pt>
 File: ../figures/Q9/fashion_mnist/30000.png Graphic file (type png)
 <use ../figures/Q9/fashion_mnist/30000.png>
-Package pdftex.def Info: ../figures/Q9/fashion_mnist/30000.png  used on input line 624.
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/30000.png  used on input line 623.
 (pdftex.def)             Requested size: 142.26378pt x 100.368pt.
 <../figures/Q9/fashion_mnist/50000.png, id=196, 325.215pt x 227.85126pt>
 File: ../figures/Q9/fashion_mnist/50000.png Graphic file (type png)
 <use ../figures/Q9/fashion_mnist/50000.png>
-Package pdftex.def Info: ../figures/Q9/fashion_mnist/50000.png  used on input line 632.
+Package pdftex.def Info: ../figures/Q9/fashion_mnist/50000.png  used on input line 631.
 (pdftex.def)             Requested size: 142.26378pt x 99.67424pt.
  [7 <../figures/Q9/mnist/0.png> <../figures/Q9/mnist/1000.png> <../figures/Q9/mnist/10000.png> <../figures/Q9/mnist/20000.png> <../figures/Q9/mnist/30000.png> <../figures/Q9/mnist/50000.png> <../figures/Q9/fashion_mnist/0.png> <../figures/Q9/fashion_mnist/1000.png> <../figures/Q9/fashion_mnist/10000.png> <../figures/Q9/fashion_mnist/20000.png> <../figures/Q9/fashion_mnist/30000.png> <../figures/Q9/fashion_mnist/50000.png>]
-<../figures/Q10/tsne1.png, id=219, 650.43pt x 650.43pt>
+<../figures/Q10/CBOW.png, id=219, 880.28876pt x 1173.38374pt>
+File: ../figures/Q10/CBOW.png Graphic file (type png)
+<use ../figures/Q10/CBOW.png>
+Package pdftex.def Info: ../figures/Q10/CBOW.png  used on input line 662.
+(pdftex.def)             Requested size: 142.26378pt x 189.62518pt.
+<../figures/Q10/skip-gram.png, id=220, 832.10875pt x 1181.41376pt>
+File: ../figures/Q10/skip-gram.png Graphic file (type png)
+<use ../figures/Q10/skip-gram.png>
+Package pdftex.def Info: ../figures/Q10/skip-gram.png  used on input line 670.
+(pdftex.def)             Requested size: 142.26378pt x 201.97337pt.
+ [8 <../figures/Q10/CBOW.png> <../figures/Q10/skip-gram.png>]
+<../figures/Q10/tsne1.png, id=237, 650.43pt x 650.43pt>
 File: ../figures/Q10/tsne1.png Graphic file (type png)
 <use ../figures/Q10/tsne1.png>
-Package pdftex.def Info: ../figures/Q10/tsne1.png  used on input line 664.
+Package pdftex.def Info: ../figures/Q10/tsne1.png  used on input line 698.
 (pdftex.def)             Requested size: 284.52756pt x 284.53264pt.
-<../figures/Q10/tsne2.png, id=220, 650.43pt x 650.43pt>
+<../figures/Q10/tsne2.png, id=238, 650.43pt x 650.43pt>
 File: ../figures/Q10/tsne2.png Graphic file (type png)
 <use ../figures/Q10/tsne2.png>
-Package pdftex.def Info: ../figures/Q10/tsne2.png  used on input line 671.
+Package pdftex.def Info: ../figures/Q10/tsne2.png  used on input line 705.
 (pdftex.def)             Requested size: 284.52756pt x 284.53264pt.
- [8 <../figures/Q10/tsne1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 682.
- [9 <../figures/Q10/tsne2.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 682.
+ [9 <../figures/Q10/tsne1.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 718.
+ [10 <../figures/Q10/tsne2.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 718.
  (./efc4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 682.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 682.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 718.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 718.
 Package rerunfilecheck Info: File `efc4.out' has not changed.
-(rerunfilecheck)             Checksum: 3BE1E6A5C7541233BA21637AC37EDF01;1130.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 682.
+(rerunfilecheck)             Checksum: 81ED1EEF49BF2D97919711C142A0860A;1130.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 718.
  ) 
 Here is how much of TeX's memory you used:
- 10631 strings out of 480478
- 162690 string characters out of 5905960
- 461360 words of memory out of 5000000
- 26408 multiletter control sequences out of 15000+600000
+ 10659 strings out of 480478
+ 163168 string characters out of 5905960
+ 461582 words of memory out of 5000000
+ 26427 multiletter control sequences out of 15000+600000
  542671 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,12n,47p,897b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,12n,47p,1043b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on efc4.pdf (9 pages, 812262 bytes).
+Output written on efc4.pdf (10 pages, 892427 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 307 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 323 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 

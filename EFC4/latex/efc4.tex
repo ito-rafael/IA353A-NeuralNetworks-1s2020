@@ -501,12 +501,11 @@
     \item game\_over: valor booleano que indica se houve game over (win ou lose).
 \end{itemize}
 
-\paragraph{Assim, para cada movimento do rato, temos um episódio que podemos inserir em uma memória. Conforme essa memória vai se enchendo, defini-se um limite para deletar episódios mais antigos armazenados. Neste caso em específico, adotou-se uma memória de tamanho padrão 1000, mas definindo-a como 8 vezes o tamanho do labirinto na chamada do treinamento da rede neural.}
+\paragraph{Assim, para cada movimento do rato, temos um episódio que podemos inserir em uma memória. Conforme essa memória vai enchendo, defini-se um limite para deletar episódios mais antigos armazenados. Neste caso em específico, adotou-se uma memória de tamanho padrão 1000, mas definindo-a como 8 vezes o tamanho do labirinto na chamada do treinamento da rede neural.}
 
 \paragraph{O método remember é chamado após cada movimento do agente, sendo sua função armazenar as informações daquele episódio na memória. O método get\_data é usado para pegar da memória a entrada (inputs) e saída (targets) que será usado no treinamento da rede neural, sendo que o número de amostras retornado por get\_data é definido como o mínimo entre o tamanho da memória e 50 (data\_size). E é esse processo que caracteriza a técnica experience replay, armazenando experiências recentes do agente (com a premissa de quanto mais ele se movimenta no ambiente, melhor vai ficando a predição da rede neural e portanto seus próximos movimentos) e usando dessas experiências para o treinamento, dado que a solução do problema trata-se de um processo iterativo.}
 
 \paragraph{Inicialmente, a saída da rede neural produzirá resultados aleatórios, mas conforme o treinamento for avançando e os parâmetros ajustados adequadamente, sua saída vai convergindo para a solução da equação de Bellman.}
-
 
 \newpage
 %=================================================
@@ -648,16 +647,51 @@
 \href{https://drive.google.com/file/d/1EAU2toNRn-MjXyO_YAsZFejdaJDapibX/view?usp=sharing}{https://drive.google.com/file/d/1EAU2toNRn-MjXyO\_YAsZFejdaJDapibX/view?usp=sharing}
 
 %------------------------
-\subsection{Word2Vec}
+\subsection{word2vec}
 %------------------------
 
+\paragraph{O word2vec, proposto por \href{https://github.com/ito-rafael/machine-learning/blob/master/papers/NLP/2013\%20-\%20\%5Bword2vec\%5D\%20Efficient\%20Estimation\%20of\%20Word\%20Representations\%20in\%20Vector\%20Space\%20\%5BGoogle\%20Inc\%5D.pdf}{(Mikolov et al., 2013)} é uma ferramenta que fornece uma implementação eficiente das arquiteturas CBOW (continuous bag-of-words) e skip-gram para computar representação de vetores de palavras. Um resumo de uma página deste artigo feito por mim pode ser encontrado no seguinte \href{https://github.com/ito-rafael/machine-learning/blob/master/one-page\%20papers\%20summary/2013\%20-\%20\%5Bword2vec\%5D\%20Efficient\%20Estimation\%20of\%20Word\%20Representations\%20in\%20Vector\%20Space\%20\%5BGoogle\%20Inc\%5D.pdf}{link}. O código do wordvec está disponível em \href{https://code.google.com/archive/p/word2vec/}{https://code.google.com/archive/p/word2vec/}.}
 
+\graphicspath{{../figures/Q10/}}
+
+\begin{figure}[H]
+    \centering
+    % CBOW
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=5cm]{CBOW}
+        \caption{CBOW}
+        \label{fig:cbow}
+    \end{subfigure}
+    \hfill
+     % skip-gram
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=5cm]{skip-gram}
+        \caption{skip-gram}
+        \label{fig:skip-gram}
+    \end{subfigure}
+    % caption and label
+    \caption{Architectures used in word2vec} 
+    \label{fig:word2vec}
+\end{figure}
+
+\paragraph{Resumidamente, o modelo CBOW tenta prever a palavra atual, baseada no contexto de algumas palavras anteriores e algumas palavras posteriores. Já o modelo Skip-gram tenta maximizar a classificação de uma palavra baseado em outra palavra na mesma frase.}
+
+\paragraph{Além dessas duas arquiteturas propostas, o artigo também apresenta medidas de similaridades sintáticas e semânticas entre palavras (feitas algebricamente), a criação do dataset ``Semantic-Syntactic Word Relationship test set" e uma forma de treinamento paralelo implementada em um framework chamado “DistBelief".}
+
+\paragraph{Em termos práticos, o que se consegue com o word2vec é uma representação de palavras em um espaço de dimensão reduzida (um vetor no ${\rm I\!R^{300}}$ por exemplo). Com isso, elimina-se a esparsidade da técnica anterior denominada bag-of-words, one tinha-se uma representação one-hot das palavras, isto é, a entrada da rede neural tinha o tamanho do vocabulário usado.}
+
+\paragraph{Esses vetores são denominados de word embeddings e são usados na grande maioria de arquiteturas SOTA (state-of-the-art). Por exemplo, na arquitetura BERT, usa-se três tipos de embeddings: embedding posicional, embedding de segmento e embedding de palavras.}
+
+\paragraph{Por fim, é interessante ressaltar as relações entre embeddings obtidas através de simples operações algébricas. Por exemplo, se considerarmos a relação entre embeddings de palavras de país e capital, temos a seguinte relação: Paris - France + Italy = Rome. Isto é, operando com os embeddings das palavras Paris, France e Italy, temos como resultado um vetor, sendo que a palavra mais próxima desse vetor resultante é o embedding da palavra Rome. Um outro exmplo clássico é a operação entres os vetores das palavra King - Man + Woman. O embedding mais próximo deste resultado é o da palavra Queen.}
+
+\paragraph{Um outro projeto semelhante é o GloVe, proposto em \href{https://github.com/ito-rafael/machine-learning/blob/master/papers/NLP/2014\%20-\%20\%5BGloVe\%5D\%20GloVe:\%20Global\%20Vectors\%20for\%20Word\%20Representation\%20\%5BStanford\%20University\%5D\%20(Pennington\%20et\%20al.\%2C\%202014).pdf}{(Pennington et al., 2014)}, que também propõe vetores para representação de palavras. Um exemplo interessante pode ser encontrado na \href{https://nlp.stanford.edu/projects/glove/}{página inicial do projeto}, onde é mostrado que as palavras cujos embedding são mais próximos do embedding da palavra frog são: frogs, toad, litoria, leptodactylidae, rana, 
+lizard e eleutherodactylus.}
 
 %------------------------
 \subsection{t-SNE}
 %------------------------
-
-\graphicspath{{../figures/Q10/}}
 
 \begin{figure}[H]
     \centering
@@ -676,6 +710,8 @@
 %------------------------
 \subsection{Results discussion}
 %------------------------
+
+
 
 %=================================================
 

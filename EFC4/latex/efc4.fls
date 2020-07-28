@@ -289,6 +289,12 @@ INPUT ../figures/Q9/fashion_mnist/30000.png
 INPUT ../figures/Q9/fashion_mnist/50000.png
 INPUT ../figures/Q9/fashion_mnist/50000.png
 INPUT ../figures/Q9/fashion_mnist/50000.png
+INPUT ../figures/Q10/CBOW.png
+INPUT ../figures/Q10/CBOW.png
+INPUT ../figures/Q10/CBOW.png
+INPUT ../figures/Q10/skip-gram.png
+INPUT ../figures/Q10/skip-gram.png
+INPUT ../figures/Q10/skip-gram.png
 INPUT ../figures/Q10/tsne1.png
 INPUT ../figures/Q10/tsne1.png
 INPUT ../figures/Q10/tsne1.png
