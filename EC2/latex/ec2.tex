@@ -115,14 +115,14 @@
 \section*{Question 8}
 %=================================================
 
-\paragraph{Considerando a camada $q$ de uma rede neural, temos:}
+\paragraph{Considerando a camada $q$ de uma rede neural MLP, temos:}
 \[x^{[q]} = f(W^{[q]} x^{[q-1]} + b)\]
 
 \paragraph{Onde:}
 \begin{itemize}
-    \item $x^{[q]}$ é saída da camada $q$ após função de ativação;
+    \item $x^{[q]}$ é a saída da camada $q$ após função de ativação;
     \item $W^{[q]}$ são os pesos dos neurônios da camada $q$;
-    \item $x^{[q-1]}$ é a entrada camada $q$ (saída da camada $q-1$);
+    \item $x^{[q-1]}$ é a entrada da camada $q$ (saída da camada $q-1$);
     \item $f(\cdot)$ é a função de ativação da camada $q$;
 \end{itemize}
 
@@ -135,11 +135,11 @@
 \begin{enumerate}[label=(\roman*)]
     \item função de ativação $f(\cdot) = tanh$, sendo que no início do treinamento trabalha-se com os pesos próximos à região linear (próximo de zero), evitando neurônios operando na região de saturação e favorecendo o aprendizado nas primeiras iterações. Desta forma, considerando a região linear, podemos aproximar a função $tanh$ para uma função identidade;
     \item $W$ e $x$ são independentes entre si;
-    \item $W$ é uma variável aleatória i.i.d. (independente e identicamente distribuída). Isso geralmente é verdade para a inicialização.;
-    \item $x$ é uma variável aleatória i.i.d. (independente e identicamente distribuída). Embora nem sempre isso seja verdade, por exemplo, pixels de uma imagem geralmente apresentam alta correlação entre pixels ao redor, faremos essa consideração;
+    \item $W$ é uma variável aleatória i.i.d. (independente e identicamente distribuída). Isso geralmente é verdade para a inicialização;
+    \item $x$ é uma variável aleatória i.i.d. (independente e identicamente distribuída). Embora nem sempre isso seja verdade (por exemplo, pixels de uma imagem geralmente apresentam alta correlação entre pixels ao redor), faremos essa consideração;
 \end{enumerate}
 
-\paragraph{Continuando o desenvolvimento da equação anterior, temos:}
+\paragraph{Continuando o desenvolvimento da equação anterior:}
 \[Var(x^{[q]}) = Var(f(W^{[q]} x^{[q-1]} + b))\]
 
 \paragraph{A partir de i), temos:}
@@ -153,9 +153,9 @@
 \[Var(x^{[q]}) = Var(W^{[q]} x^{[q-1]} + b)\]
 \[Var(x^{[q]}) = Var(\sum_{i=1}^{n^{[q-1]}} w_i^{[q]} x_i^{[q-1]})\]
 \[Var(x^{[q]}) = \sum_{i=1}^{n^{[q-1]}} Var(w_i^{[q]} x_i^{[q-1]})\]
-\[Var(x^{[q]}) = \sum_{i=1}^{n^{[q-1]}}[\mathbb{E}(w_i^{[q]})]^2 Var(x_i^{[q-1]}) + [\mathbb{E}(x_i^{[q-1]})]^2 Var(w_i^{[q]}) + Var(w_i^{[q]})Var(x_i^{[q-1])}\]
+\[Var(x^{[q]}) = \sum_{i=1}^{n^{[q-1]}}[\mathbb{E}(w_i^{[q]})]^2 Var(x_i^{[q-1]}) + [\mathbb{E}(x_i^{[q-1]})]^2 Var(w_i^{[q]}) + Var(w_i^{[q]})Var(x_i^{[q-1])})\]
 
-\paragraph{A partir de iii) e iv), temos que $\mathbb{E}(w_i) = 0$ e $\mathbb{E}(x_i) = 0$. Sendo ambos $W$ e $x$ variáveis i.i.d. Assim:}
+\paragraph{A partir de iii) e iv), temos que $\mathbb{E}(w_i) = 0$ e $\mathbb{E}(x_i) = 0$, sendo ambos $W$ e $x$ variáveis i.i.d. Assim:}
 \[Var(x^{[q]}) = \sum_{i=1}^{n^{[q-1]}} Var(w_i^{[q]})Var(x_i^{[q-1]})\]
 \[\boxed{Var(x^{[q]}) = n^{[q-1]} Var(w^{[q]})Var(x^{[q-1]})}\]
 
@@ -182,8 +182,20 @@
 %------------------------
 \subsection{Principais seções do padrão de documentação}
 %------------------------
+\paragraph{As principais seções do padrão de documentação de datasets são mostradas na seção 3 do artigo, entitulada ``Questions and Workflow''. Os itens desta seção, assim como uma breve descrição são apresentados a seguir:}
 
+\begin{itemize}
+    \setlength\itemsep{0mm}
+    \item \textbf{Motivação:} razões para a criação do dataset (propósito de tarefa específica, preenchimento de alguma lacuna na área), informações a cerca de quem ou qual grupo o criou, se houve alguma apoio ou financiamento para a construção do dataset.
+    \item \textbf{Composição:} informações com respeito a composição do dataset, como por exemplo, do que se tratam os dados, se há rótulos e quais, quantidade de cada classe (se aplicável), divisão em treinamento/validação/teste recomendada, fontes de ruído nos dados, se os dados estão relacionados a pessoas, etc.
+    \item \textbf{Processo de coleta:} informações sobre a construção do dataset permitindo outras pessoas reconstruí-lo (quando aplicável) sem ter acesso a ele. Aqui temos perguntas do tipo, se os dados foram coletados de algum sensor ou humanos, se os dados foram observados diretamente, que tipo de pessoa participou do processo de coleta dos dados e se elas foram compensadas, se há algum aspecto ético envolvido, etc.
+    \item \textbf{Pré-processamento/limpeza/rotulamento:} descrição sobre o processamento e metodologia usada nos dados crus (fornecendo-os quando possível) e informação do software usado para isso quando aplicável.
+    \item \textbf{Uso:} quais os casos de uso deste dataset, links para artigos que usufruem do dataset em questão, situações em que o dataset não deve ser usado.
+    \item \textbf{Distribuição:} informações a respeito da distribuição dos dados. Se serão ou não distribuídos, onde e como serão (página web, GitHub, API, compactado), quando, qual a licença de uso, etc.
+    \item \textbf{Manutenção:} por fim, informações a respeito de quem está hospedando os dados, quem está dando manutenção e suporte no dataset, contato do responsável, se há alguma errata, planos de atualização (o quê e quando), suporte a versões anteriores, entre outros.
+\end{itemize}
 
+\paragraph{Dois exemplos de datasheet para dataset são mostrados no apêndice do artigo. Um para o dataset ``Labeled Faces in the Wild'' e outro para o dataset  ``Pang and Lee’s polarity''.}
 
 %------------------------
 \subsection{Artigos com propósitos similares}
@@ -195,6 +207,7 @@
 O primeiro artigo é de um grupo da IBM Research e apresenta os FactSheets. Assim como os datasheets de componentes inspiraram o artigo usado como base desta questão, os SDoCs (supplier’s declarations of conformity) foram usados como base neste artigo de 2018 para propor os FactSheets.
 
 \begin{itemize}
+    \setlength\itemsep{0mm}
     \item título: FactSheets:  Increasing Trust in AI Servicesthrough Supplier’s Declarations of Conformity
     \item ano: 2018
     \item authors: Arnold et al. (IBM Research)
@@ -207,6 +220,7 @@ O primeiro artigo é de um grupo da IBM Research e apresenta os FactSheets. Assi
 O segundo artigo também é de 2018 de um grupo da Google e apresenta os Model Cards. Um dos autores do artigo é o autor principal do artigo ``Datasheets for Datasets'' (Timnit Gebru), usado como base para esta questão. O artigo propõe um padrão de relatório para \textbf{modelos} treinados de machine learning, apresentando exemplos para dois modelos.
 
 \begin{itemize}
+    \setlength\itemsep{0mm}
     \item título: Model Cards for Model Reporting
     \item ano: 2018
     \item authors: Mitchell et al. (Google)
