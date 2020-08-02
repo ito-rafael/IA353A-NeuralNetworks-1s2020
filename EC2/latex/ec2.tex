@@ -237,10 +237,37 @@ O segundo artigo também é de 2018 de um grupo da Google e apresenta os Model C
 %------------------------
 \subsection{EfficientNet}
 %------------------------
+\paragraph{O artigo \href{https://arxiv.org/pdf/1905.11946.pdf}{(Tan \& Le, 2019)} propõe uma forma de escalar modelos baseados em redes convolucionais (ConvNets), como por exemplo MobileNets e ResNet, levando em conta três parâmetros avaliados conjuntamente: profundidade, largura e resolução. Adicionalmente, os autores usam um método de NAS (\emph{neural architecture search}) para encontrar um modelo base (baseline), para em seguida usar o método de escalamento proposto e obter uma família de modelos denominada \emph{EfficientNets}, cujos resultados são impressionantes, sendo mais eficientes em termos de custo computacional (modelos menores e mais rápidos) e performance, com resultados melhores atingindo o estado da arte (SOTA) para base de dados como ImageNet, CIFAR-100 e outras.}
+
+\paragraph{Supondo que se queira um modelo maior que use $2^N$ mais recursos, propõe-se aumentar a rede multiplicando os três parâmetros pelas seguintes constantes: profundidade multiplicada por $\alpha^N$, largura multiplicada por $\beta^N$ e tamanho da imagem (resolução) por $\gamma^N$, onde $\alpha$, $\beta$ e $\gamma$ são determinados através de um grid search no modelo original.}
+
+\paragraph{Na seção 3 do artigo, os autores mostram que o escalamento dos três parâmetros aumentam a performance dos modelos, mas cada um seguindo sua própria curva de saturação (figura 3 do artigo). Assim, eles chegam na primeira observação. A segunda observação foi obtida através dos experimentos cujos resultados são mostrados na figura 4 do artigo. Aqui é concluído que para uma melhor acurácia e eficiência, é necessário um balanceamento entre os fatores de escala de largura, profundidade e resolução.}
+
+\paragraph{O método de escalamento proposto é mostrado a seguir:}
+\begin{itemize}
+    \item profundidade: $d = \alpha^\phi$
+    \item largura: $w = \beta^\phi$
+    \item resolução: $r = \gamma^\phi$
+\end{itemize}
+\paragraph{sujeito a:}
+\begin{itemize}
+    \item $\alpha \cdot \beta^2 \cdot \gamma^2 \approx 2$
+    \item $\alpha \geq 1$
+    \item $\beta \geq 1$
+    \item $\gamma \geq 1$
+\end{itemize}
+
+\paragraph{O modelo base, denominado EfficientNet, foi obtido através de uma busca (NAS) multi-objetiva, procurando otimizar tanto a acurácia quanto FLOPS (operações de ponto flutuante por segundo). O função objetivo é dada por: $ACC(m) \times [FLOPS(m)/T]^w$, onde $ACC(m)$ e $FLOPS(m)$ é a acurária e FLOPS do modelo $m$, $T$ é o FLOPS alvo e $w$ controla o \emph{tradeoff} entre acurária e FLOPS. Tomando $w = -0.07$, chega-se no modelo EfficientNet-B0.}
+
+\paragraph{A partir do modelo EfficientNet-B0, toma-se $\phi=1$ (dobro de recursos) e busca-se as constantes através de um \emph{grid search}. Encontra-se $\alpha=1.2$, $\beta=1.1$ e $\gamma=1.15$, satisfazendo a restrição $\alpha \cdot \beta^2 \cdot \gamma^2 \approx 2$. Em seguida, essas constantes são usadas para escalar diferentes modelos alterando o valor de $\phi$, obtendo-se os modelos EfficientNet-B1 até B7. Além destes modelos, MobileNets e ResNets também foram escaladas seguindo essa regra.}
+
+\paragraph{A partir da seção 5 do artigo, são descritos os experimentos e resultados, discussões e conclusão. Conforme descrito no início da resposta desta questão, os resultados obtidos são impressionantes, ganhando tanto em performance (custo computacional) quanto em desempenho (acurária), atingindo um novo SOTA na área de visão computacional e ConvNets.}
 
 %------------------------
 \subsection{FixEfficientNet}
 %------------------------
+
+
 
 %=================================================
 

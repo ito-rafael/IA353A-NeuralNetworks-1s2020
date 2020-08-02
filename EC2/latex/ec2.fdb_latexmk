@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1596383404 "ec2.tex" "ec2.pdf" "ec2" 1596383404
+["pdflatex"] 1596403607 "ec2.tex" "ec2.pdf" "ec2" 1596403607
   "../figures/feec.jpg" 1574616926 23748 70e97f73b303fb0bb3a46c140ac489a1 ""
   "../figures/unicamp.png" 1574616926 20799 22e8b217252e731615341a48a090e52d ""
   "/home/rafael/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1576676982 334320 d10c2901904b0a572e57c10ac4826b67 ""
@@ -16,6 +16,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1591545468 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1591545468 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1591545468 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1591545468 1532 9162035f4e7176612125649e348e2195 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1591545468 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1591545468 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1591545468 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -29,6 +30,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1591545468 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1591545468 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1591545468 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1591545468 36554 b67dc2cfa451409e100b3fcf5f506509 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1591545468 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1591545468 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1591545468 37912 77d683123f92148345f3fc36a38d9ab1 ""
@@ -112,11 +114,11 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1591545468 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1594246621 2514048 e5f8fc97bbbd16fd18a98bf6f58f411b ""
-  "ec2.aux" 1596383404 4799 d8d0e034cfd0d620cc791f849867aa81 "pdflatex"
-  "ec2.out" 1596383404 589 b16229aa169cd5160048daa25e13b95d "pdflatex"
-  "ec2.tex" 1596383402 11827 2f1e4bdb6d0378668269111822ccc36d ""
+  "ec2.aux" 1596403607 8580 1088c10b6b0e70a8ca78140af3cb7363 "pdflatex"
+  "ec2.out" 1596403607 589 b16229aa169cd5160048daa25e13b95d "pdflatex"
+  "ec2.tex" 1596403606 15323 69dec26cc820788eb93e76df706869c0 ""
   (generated)
   "ec2.out"
-  "ec2.pdf"
-  "ec2.log"
   "ec2.aux"
+  "ec2.log"
+  "ec2.pdf"
