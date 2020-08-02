@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1596380515 "ec2.tex" "ec2.pdf" "ec2" 1596380516
+["pdflatex"] 1596380592 "ec2.tex" "ec2.pdf" "ec2" 1596380592
   "../figures/feec.jpg" 1574616926 23748 70e97f73b303fb0bb3a46c140ac489a1 ""
   "../figures/unicamp.png" 1574616926 20799 22e8b217252e731615341a48a090e52d ""
   "/home/rafael/.texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1576676982 334320 d10c2901904b0a572e57c10ac4826b67 ""
@@ -112,11 +112,11 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1591545468 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1594246621 2514048 e5f8fc97bbbd16fd18a98bf6f58f411b ""
-  "ec2.aux" 1596380516 4224 d0cf54c5a49e79ab36700e69f344f390 "pdflatex"
-  "ec2.out" 1596380516 589 b16229aa169cd5160048daa25e13b95d "pdflatex"
-  "ec2.tex" 1596380515 8744 2600f79fe2a0d2d5953680b0cd13c267 ""
+  "ec2.aux" 1596380592 4224 d0cf54c5a49e79ab36700e69f344f390 "pdflatex"
+  "ec2.out" 1596380592 589 b16229aa169cd5160048daa25e13b95d "pdflatex"
+  "ec2.tex" 1596380590 9349 d88dcb9a4362f3a73a7724a28ae165b9 ""
   (generated)
-  "ec2.aux"
+  "ec2.out"
   "ec2.log"
   "ec2.pdf"
-  "ec2.out"
+  "ec2.aux"
