@@ -266,8 +266,20 @@ O segundo artigo também é de 2018 de um grupo da Google e apresenta os Model C
 %------------------------
 \subsection{FixEfficientNet}
 %------------------------
+\paragraph{O segundo artigo \href{https://arxiv.org/pdf/2003.08237.pdf}{(Touvron et al., 2020)} na verdade é uma nota que complementa o artigo ``\href{https://arxiv.org/pdf/1906.06423.pdf}{Fixing the train-test resolution discrepancy}'', que introduz o método denominado FixRes.}
 
+\paragraph{O artigo original mostra que as técnicas de \emph{data-augmentation} usadas até então induziam uma discrepância entre o tamanhos dos objetos visto pelo classificador durante o treinamento e durante a fase de teste. Assim, os autores propõe uma estratégia que otimiza a performance do classificador, empregando diferentes resoluções em teste e treinamento. Isso é feito através de um \emph{fine-tuning} da rede na resolução de teste.}
 
+\paragraph{A nota que complementa o aritgo original toma as diversas redes renomadas, dentre elas as EfficientNets do item anterior, e aplica o método FixRes para obter uma família de redes denominadas FixEfficientNet. Os resultados podem ser vistos na figura \ref{fig:q10}.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{Q10_FixEfficientNet}
+    \caption{Comparação entre diversas redes com e sem a aplicação do método FixRes}
+    \label{fig:q10}
+\end{figure}
+
+\paragraph{Como podemos ver, em um curto período de tempo temos novos modelos SOTA. Alguns podem vir de arquiteturas novas (ex: EfficientNet em ConvNets e Transformers em NLP), outros de melhorias feitas na metodologia a partir de modelos já existentes (ex: escalamento apresentado no artigo da EfficientNet e método FixRes).}
 
 %=================================================
 

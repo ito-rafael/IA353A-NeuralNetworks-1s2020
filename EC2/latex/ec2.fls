@@ -187,6 +187,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT ../figures/Q10_FixEfficientNet.png
+INPUT ../figures/Q10_FixEfficientNet.png
+INPUT ../figures/Q10_FixEfficientNet.png
 INPUT ec2.aux
 INPUT ./ec2.out
 INPUT ./ec2.out
