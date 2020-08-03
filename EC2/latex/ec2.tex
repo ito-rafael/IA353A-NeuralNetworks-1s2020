@@ -216,7 +216,10 @@
 \paragraph{Como queremos $Var(x^{[q]}) = Var(x^{[q-1]})$, temos:}
 \[n^{[q-1]} \cdot \frac{4b^2}{12} = 1\]
 \[b^2 = \frac{12}{4 \cdot n^{[q-1]}}\]
-\[\boxed{b = \sqrt{\frac{3}{n^{[q-1]}}}}\]
+\[\boxed{b = \pm\sqrt{\frac{3}{n^{[q-1]}}}}\]
+
+\paragraph{Ou seja, os pesos $W$ devem ser inicializados com uma distribuição uniforme segundo:}
+\[\mathcal{U} \sim \left[-\sqrt{\frac{3}{n^{[q-1]}}}, +\sqrt{\frac{3}{n^{[q-1]}}}\right]\]
 
 \newpage
 \setcounter{section}{9}
