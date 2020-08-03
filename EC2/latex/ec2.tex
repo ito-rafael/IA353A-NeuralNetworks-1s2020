@@ -105,10 +105,27 @@
 %------------------------
 \subsection{Camadas compartilhadas}
 %------------------------
+\paragraph{Uma das estratégias usada em MTL consiste em incluir na função custo a ser otimizada as perdas de cada uma das tarefas envolvidas, por exemplo com uma soma ponderada (para o caso de as escalas da perdas serem diferentes). Assim, o ajuste dos pesos das camadas compartilhadas da arquitetura de MTL mostrada na figura \ref{fig:q7} consiste em apresentar para a rede padrões das tarefas consideradas, calcular o erro na saída da tarefa em questão e fazer o uso do \emph{backpropagation} normalmente para atualização dos pesos (se mini batches forem usados, misturar dados das tarefas para formar os mini batches pode ajudar no treinamento).}
+
+\paragraph{Se treinarmos cada tarefa de aprendizado individualmente, na prática estamos ignorando informações das outras tarefas relacionadas que poderia ajudar ainda mais na métrica da tarefa em treinamento. Quando usamos todas essas informações, estamos compartilhando representações entre as tarefas relacionadas e isso faz com o que o modelo generalize melhor na tarefa original.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6cm]{Q7}
+    \caption{Abordagem de compartilhamentos de parâmetros \emph{Hard}}
+    \label{fig:q7}
+\end{figure}
+
+\paragraph{De fato, esta é uma das vantagens em se usar MTL. Conforme citado no artigo \href{https://arxiv.org/pdf/1706.05098.pdf}{(Ruder, 2017)}, recomendando como leitura de apoio para a resposta desta questão, \href{https://link.springer.com/content/pdf/10.1023/A:1007327622663.pdf}{(Baxter, 1997)} mostra que o risco de \emph{overfitting} nos parâmetros das camadas compartilhadas é de ordem N (onde N é o número de tarefas) vezes menor do que o risco de \emph{overfitting } nas camadas de saída específicas para cada tarefa. E isso faz sentido, pois quanto mais tarefas considerarmos simultaneamente, mais o modelo precisa encontrar uma representação que capture todas as tarefas, e portanto menor é a chance de \emph{overfitting}.}
+
+\paragraph{Uma outra forma de enxergar MTL, também recorrendo à leitura de apoio, é olhar para MTL como uma forma de transferência indutiva, que melhora o modelo introduzindo um \emph{bias} indutivo. Para o caso de MTL, esse \emph{bias} indutivo é fornecido pelas tarefas auxiliares, e isso faz com que o modelo dê preferência para hipóteses que explicam mais de uma tarefa, o que geralmente leva a soluções que generalizam melhor.}
+
+\paragraph{Por fim, um último fato relevante a ser levantado é que mesmo que a função custo a ser otimizada seja apenas de uma tarefa, incluir tarefas auxiliares (que tenham alguma relação com a tarefa original) pode melhorar o desempenho na tarefa original, por conta de uma melhor representação dos dados nas camadas compartilhadas.}
 
 %------------------------
 \subsection{MALSAR}
 %------------------------
+
 
 \newpage
 %=================================================
@@ -249,7 +266,7 @@ O segundo artigo também é de 2018 de um grupo da Google e apresenta os Model C
     \item largura: $w = \beta^\phi$
     \item resolução: $r = \gamma^\phi$
 \end{itemize}
-\paragraph{sujeito a:}
+\paragraph{Sujeito a:}
 \begin{itemize}
     \item $\alpha \cdot \beta^2 \cdot \gamma^2 \approx 2$
     \item $\alpha \geq 1$
@@ -257,7 +274,7 @@ O segundo artigo também é de 2018 de um grupo da Google e apresenta os Model C
     \item $\gamma \geq 1$
 \end{itemize}
 
-\paragraph{O modelo base, denominado EfficientNet, foi obtido através de uma busca (NAS) multi-objetiva, procurando otimizar tanto a acurácia quanto FLOPS (operações de ponto flutuante por segundo). O função objetivo é dada por: $ACC(m) \times [FLOPS(m)/T]^w$, onde $ACC(m)$ e $FLOPS(m)$ é a acurária e FLOPS do modelo $m$, $T$ é o FLOPS alvo e $w$ controla o \emph{tradeoff} entre acurária e FLOPS. Tomando $w = -0.07$, chega-se no modelo EfficientNet-B0.}
+\paragraph{O modelo base, denominado EfficientNet, foi obtido através de uma busca (NAS) multi-objetiva, procurando otimizar tanto a acurácia quanto FLOPS (operações de ponto flutuante por segundo). A função objetivo é dada por: $ACC(m) \times [FLOPS(m)/T]^w$, onde $ACC(m)$ e $FLOPS(m)$ é a acurária e FLOPS do modelo $m$, $T$ é o FLOPS alvo e $w$ controla o \emph{tradeoff} entre acurária e FLOPS. Tomando $w = -0.07$, chega-se no modelo EfficientNet-B0.}
 
 \paragraph{A partir do modelo EfficientNet-B0, toma-se $\phi=1$ (dobro de recursos) e busca-se as constantes através de um \emph{grid search}. Encontra-se $\alpha=1.2$, $\beta=1.1$ e $\gamma=1.15$, satisfazendo a restrição $\alpha \cdot \beta^2 \cdot \gamma^2 \approx 2$. Em seguida, essas constantes são usadas para escalar diferentes modelos alterando o valor de $\phi$, obtendo-se os modelos EfficientNet-B1 até B7. Além destes modelos, MobileNets e ResNets também foram escaladas seguindo essa regra.}
 
@@ -266,11 +283,11 @@ O segundo artigo também é de 2018 de um grupo da Google e apresenta os Model C
 %------------------------
 \subsection{FixEfficientNet}
 %------------------------
-\paragraph{O segundo artigo \href{https://arxiv.org/pdf/2003.08237.pdf}{(Touvron et al., 2020)} na verdade é uma nota que complementa o artigo ``\href{https://arxiv.org/pdf/1906.06423.pdf}{Fixing the train-test resolution discrepancy}'', que introduz o método denominado FixRes.}
+\paragraph{O segundo artigo \href{https://arxiv.org/pdf/2003.08237.pdf}{(Touvron et al., 2020)} é na verdade uma nota que complementa o artigo ``\href{https://arxiv.org/pdf/1906.06423.pdf}{Fixing the train-test resolution discrepancy}'', que introduz o método denominado FixRes.}
 
 \paragraph{O artigo original mostra que as técnicas de \emph{data-augmentation} usadas até então induziam uma discrepância entre o tamanhos dos objetos visto pelo classificador durante o treinamento e durante a fase de teste. Assim, os autores propõe uma estratégia que otimiza a performance do classificador, empregando diferentes resoluções em teste e treinamento. Isso é feito através de um \emph{fine-tuning} da rede na resolução de teste.}
 
-\paragraph{A nota que complementa o aritgo original toma as diversas redes renomadas, dentre elas as EfficientNets do item anterior, e aplica o método FixRes para obter uma família de redes denominadas FixEfficientNet. Os resultados podem ser vistos na figura \ref{fig:q10}.}
+\paragraph{A nota que complementa o artigo original toma as diversas redes renomadas, dentre elas as EfficientNets do item anterior, e aplica o método FixRes para obter uma família de redes denominadas FixEfficientNet. Os resultados podem ser vistos na figura \ref{fig:q10}.}
 
 \begin{figure}[H]
     \centering
