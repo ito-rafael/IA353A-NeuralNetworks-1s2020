@@ -126,7 +126,33 @@
 %------------------------
 \subsection{MALSAR}
 %------------------------
+\paragraph{Em machine learning, para problemas de regressão e classificação geralmente temos o seguinte problema de otimização para ser resolvido:}
 
+\[\min_W \mathcal{L}(W) + \Omega(W)\]
+
+\paragraph{Nesta equação, $W$ representa os parâmetros a serem ajustados a partir de dados durante a etapa de treinamento, $\mathcal{L}(W)$ representa a função de perda e $\Omega(W)$ o termo de regularização.}
+
+\paragraph{No contexto de MTL, $W$ continua sendo os parâmetros ajustáveis. Entretanto, como estamos trabalhando com mais de uma tarefa, podemos ter um $W$ para cada tarefa, sendo que parte dos parâmetros de $W$ são compartilhados entre as tarefas (por exemplo como no caso da figura \ref{fig:q7} do item anterior). Assim, na função de perda $\mathcal{L}(W)$ devemos incorporar os erros associados a cada uma das tarefas, podendo ser uma soma ponderada, por exemplo. $\Omega(W)$ continua sendo o termo de regularização, mas que agora incorpora a relação entre as tarefas. Isto é, diferentes suposições a cerca do tipo de relações entre as tarefas leva a diferente termos de regularização.}
+
+\paragraph{Em seguida, apresentaremos uma conformação possível para os termos de otimização da equação anterior:}
+
+\[\min_W \sum_{i=1}^{t} ||W_i^T X_i - Y_i||_F^2 + \rho_1||W||_1\]
+
+\paragraph{Essa formulação de MTL considera o método de regularização Lasso, que penaliza a norma $\ell_1$ de $W$. Esse tipo de regularização é tipicamente usado para introduzir esparsidade no modelo, forçando alguns parâmetros a zero e reduzindo a complexidade do modelo. Para a extensão da formulação de STL (\emph{Single-Task Learning}) para MTL temos que o parâmetro que controla a esparsidade é compartilhado entre todas as tarefas, assumindo assim que diferentes tarefas apresentam o mesmo parâmetro de esparsidade.}
+
+\paragraph{Na equação anterior, temos:}
+\begin{itemize}
+    \item Função de perda: $\mathcal{L}(W) = \sum_{i=1}^{t} ||W_i^T X_i - Y_i||_F^2$
+    \item Termo de regularização: $\Omega(W) = \rho_1||W||_1$
+    \item Onde temos:
+    \begin{itemize}
+        \item $t$ é o número de tarefas consideradas
+        \item $X_i$ e $Y_i$ são os dados de entrada e rótulos, respectivamente, para a tarefa $i$
+        \item $\rho_1$ é o parâmetro de regularização que controla esparsidade
+    \end{itemize}
+\end{itemize}
+
+\paragraph{O que foi apresentado vale para a regularização Lasso, podendo ser extendida para a regularização de quadrados mínimos alterando $\Omega(W)$ para $\rho_{L2}||W||_F^2$, ou ainda para elastic net somando este último termo ao apresentado para Lasso (ou seja, $\Omega(W) = \rho_1 ||W||_1 + \rho_{L2}||W||_F^2$).}
 
 \newpage
 %=================================================
