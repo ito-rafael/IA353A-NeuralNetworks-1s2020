@@ -126,7 +126,7 @@
 %------------------------
 \subsection{MALSAR}
 %------------------------
-\paragraph{Em machine learning, para problemas de regressão e classificação geralmente temos o seguinte problema de otimização para ser resolvido:}
+\paragraph{Em \emph{machine learning}, para problemas de regressão e classificação geralmente temos o seguinte problema de otimização para ser resolvido:}
 
 \[\min_W \mathcal{L}(W) + \Omega(W)\]
 
@@ -148,6 +148,8 @@
     \begin{itemize}
         \item $t$ é o número de tarefas consideradas
         \item $X_i$ e $Y_i$ são os dados de entrada e rótulos, respectivamente, para a tarefa $i$
+        \item $W_i$ é o modelo para a tarefa $i$
+        \item $W$ representa todos parâmetros ajustáveis
         \item $\rho_1$ é o parâmetro de regularização que controla esparsidade
     \end{itemize}
 \end{itemize}

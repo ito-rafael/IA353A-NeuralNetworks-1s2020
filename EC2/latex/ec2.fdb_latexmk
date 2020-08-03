@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1596452969 "ec2.tex" "ec2.pdf" "ec2" 1596452970
+["pdflatex"] 1596455837 "ec2.tex" "ec2.pdf" "ec2" 1596455837
   "../figures/Q10_FixEfficientNet.png" 1596405677 125321 908ad9d41abb6456c74116e3a1bac843 ""
   "../figures/Q7.png" 1596414399 84613 182b848b058b107de7392afa8d61b810 ""
   "../figures/feec.jpg" 1574616926 23748 70e97f73b303fb0bb3a46c140ac489a1 ""
@@ -118,11 +118,11 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1591545468 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1594246621 2514048 e5f8fc97bbbd16fd18a98bf6f58f411b ""
-  "ec2.aux" 1596452970 16930 636387bc725d2cc82eeb87382eaf2d0b "pdflatex"
-  "ec2.out" 1596452970 589 b16229aa169cd5160048daa25e13b95d "pdflatex"
-  "ec2.tex" 1596452967 22659 3a861a0561317e48a8f1e8113d1482a6 ""
+  "ec2.aux" 1596455837 16939 c139cacaf95e8fe2f661347507b057e0 "pdflatex"
+  "ec2.out" 1596455837 589 b16229aa169cd5160048daa25e13b95d "pdflatex"
+  "ec2.tex" 1596455835 22775 1302d7bb814310d8790d9635493a9a31 ""
   (generated)
-  "ec2.aux"
   "ec2.log"
   "ec2.out"
+  "ec2.aux"
   "ec2.pdf"
