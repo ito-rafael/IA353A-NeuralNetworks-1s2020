@@ -106,7 +106,7 @@
 %------------------------
 \subsection{Camadas compartilhadas}
 %------------------------
-\paragraph{Uma das estratégias usada em MTL consiste em incluir na função custo a ser otimizada as perdas de cada uma das tarefas envolvidas, por exemplo com uma soma ponderada (para o caso de as escalas da perdas serem diferentes). Assim, o ajuste dos pesos das camadas compartilhadas da arquitetura de MTL mostrada na figura \ref{fig:q7} consiste em apresentar para a rede padrões das tarefas consideradas, calcular o erro na saída da tarefa em questão e fazer o uso do \emph{backpropagation} normalmente para atualização dos pesos (se mini batches forem usados, misturar dados das tarefas para formar os mini batches pode ajudar no treinamento).}
+\paragraph{Uma das estratégias usada em MTL consiste em incluir na função custo a ser otimizada as perdas de cada uma das tarefas envolvidas, por exemplo com uma soma ponderada (para o caso de as escalas da perdas serem diferentes). Assim, o ajuste dos pesos das camadas compartilhadas da arquitetura de MTL mostrada na figura \ref{fig:q7} consiste em apresentar para a rede padrões das tarefas consideradas, calcular o erro na saída da tarefa em questão e fazer o uso do \emph{backpropagation} normalmente para atualização dos pesos (se mini batches forem usados, misturar dados das tarefas para formá-los pode ajudar no treinamento).}
 
 \paragraph{Se treinarmos cada tarefa de aprendizado individualmente, na prática estamos ignorando informações das outras tarefas relacionadas que poderia ajudar ainda mais na métrica da tarefa em treinamento. Quando usamos todas essas informações, estamos compartilhando representações entre as tarefas relacionadas e isso faz com o que o modelo generalize melhor na tarefa original.}
 
